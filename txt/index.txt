@@ -1,0 +1,210 @@
+Title: Colarusso's Digital Echo
+Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
+Description: An interactive FAQ written by Colarusso.
+Before:
+<style>
+body{
+    background:white;
+    background-image: url("https://suffolklitlab.github.io/images/babbage.jpg");
+    background-color: #fff;
+    background-repeat: repeat-x;
+    background-position: center -120px ;
+}
+#conversation {
+    max-width:900px;
+}
+#icon {
+    z-index:2;
+    margin: 20px auto 0px auto;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    border: 4px solid #fff;
+    background-color: #fff;
+    background-size: 110px;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-image: url('https://pbs.twimg.com/profile_images/943943491662397440/wzEPRO90_400x400.jpg');
+}
+.profile_vid {
+    float:none;
+    position:relative;
+    margin: auto;
+}
+.embed_vid {
+    float:none;
+    width:100%;
+}
+</style>
+<div id="icon"></div>
+<h2 align=center style="margin:5px 0 5px;">Colarusso's Digital Echo</h2>
+<p>This interactive FAQ will probably provide an answer <a href="https://twitter.com/Colarusso/status/1131906708501127174" target="_blank">more quickly</a> than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Use it to book a time to talk, figure out if you should take one of my classes, inquire about availability for speaking, earn money, and much much more. ;)</p>
+Q(1): Are you currently enrolled in one of my classes? 
+A: Yes
+	Q(1.1): Do you want to book a time to meet?
+	A: Yes
+		Q(1.1.1): Just click through here and book a time that works for you.<br><br>If you aren't a student and you take up one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif">
+		A: Okay. I'm not a student, but I want to talk.
+		A: Can I have cat videos?
+			Q(1.1.1.2):GOTO:cats
+		A: Bye.
+			Q(1.1.1.3):GOTO:bye
+	A: No.
+		Q(1.1.2): Have you asked for help on our Slack channel?
+		A: Yes
+		A: No
+			Q(1.1.2.2): It's personal
+
+A: No
+	Q(1.2): Are you a Suffolk student or faculty/staff?
+	A: Yes, student
+		Q(student): What would you like to do? 
+		A: Have a meeting/call
+		A: Learn about the classes you teach
+		A: Learn about your background
+		A: Book you as a speaker
+	A: Yes, faculty/staff
+		Q(faculty): What would you like to do? 
+		A: Have a meeting/call
+		A: Learn about the classes you teach
+		A: "Hire" the LIT Lab
+		A: Collaborate on research/scholarship
+		A: Learn about your background
+		A: Book you as a speaker
+	A: No
+		Q(external): What would you like to do? 
+		A: Learn about the classes you teach
+		A: Hire/learn about the LIT Lab
+		A: Collaborate on research/scholarship
+		A: Learn about your background
+		A: Book you as a speaker
+		A: Have a meeting/call
+			Q(1.2.3.6): <img src="https://media.giphy.com/media/4dAqzSvxV15Is/source.gif" style="width:232px;height:131px;"/><br><br> FWIW, many of the prior options lead to a link that will let you book a meeting, but they also include info that might make the need for a call moot. 
+			A: Can I see those options again?
+				Q(1.2.3.6.1): Sure. GOTO:external
+			A: None of the prior options were relevant
+				Q(1.2.3.6.2): Fair enough. ;) GOTO:call
+			A: I really hate "phone" trees
+				Q(1.2.3.6.3):<img src="https://media.giphy.com/media/2UIcmK4pn7rYNLRboG/giphy.gif" style="width:232px;height:232px;"><br><br>I hear you. Sorry for the Schrödinger GIF, but I'm just a flowchart trying to get you what you need. GOTO:call
+			A: Dude, I just want an email!
+				Q(1.2.3.6.4): <img src="https://media.giphy.com/media/ktCzb8Rm8aoow/giphy.gif" style="width:232px;height:131px;"><br><br>And I'm just a flowchart. Try d colarusso at suffolk dot edu, but remember, the above branches might have some valuable info. 
+				A: Thanks, bye.
+					Q(1.2.3.6.4.1):GOTO:bye
+				A: Can I have cat videos?
+					Q(1.2.3.6.4.2):GOTO:cats
+
+A: Wait, did you say "earn money?"
+	Q(1.3):GOTO:RAs
+
+
+
+Q(classes): What class would you like to learn about?
+A: Coding the Law
+A: Legal Innovation & Tech. Lab (LIT)
+A: LIT Fellows program
+
+
+Q(call): Are you selling something? 
+A: Yes
+	Q(3.1):<img src="https://media.giphy.com/media/3o6wrFfvR3vnV71iG4/giphy.gif" style="width:232px;height:175px;"/><br><br> I'm really not interested, and even if I were, I don't have the budget. 
+	A: Thank you, and bye.
+		Q(3.1.1):GOTO:bye
+	A: Can I have cat videos?
+		Q(3.1.2):GOTO:cats
+A: No
+	Q(3.2):You can find a time for and book a call by following <A href="https://calendly.com/dcolarusso/call" target="_blank">this link</a>. 
+	A: Thanks, bye.
+		Q(3.2.1):GOTO:bye
+	A: Can I have cat videos?
+		Q(3.2.2):GOTO:cats
+
+
+Q(RAs): Yes. Occasionally, I hire paid research assistants. Are you a Suffolk University student (law, undergrad, or grad)?
+A: Yes
+	Q(paid): Are you interested in the law, legal tech, or software engineering? 
+	A: Yes
+		Q(4.1.1): Depending on the projects we have in the pipeline, we may have something available. 
+		A: What sort of things? 
+	A: No
+		Q(4.1.2):<img src="https://media.giphy.com/media/o6KYXl09rnmOQ/giphy.gif" style="width:232px;height:131px;"/><br><br> Okay... it's probably not a good fit. GOTO:student
+A: Yes, but I need credits, not $$$?
+	Q(4.2): If you're interested in credit, I suggest checking out one of my classes. E.g., the work of Lab students is very similar to that of my RAs. 
+	A: More bout classes
+		Q(4.2.1):GOTO:classes
+	A: More about paid positions
+		Q(4.2.2):GOTO:paid
+
+A: No
+	Q(4.3): I'm afraid it's probably not a good fit. Customarily, we only have funds to hire Suffolk students. GOTO:external
+
+Q(cats): <img src="https://media.giphy.com/media/Ov5NiLVXT8JEc/giphy.gif" style="width:232px;height:130px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(5.1):GOTO:cats2
+A: No
+	Q(5.2):Bye then. GOTO:bye
+
+Q(cats2): <img src="https://media.giphy.com/media/gl8ymnpv4Sqha/giphy.gif" style="width:232px;height:195px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(6.1):GOTO:cats3
+A: No
+	Q(6.2):Bye then. GOTO:bye
+
+Q(cats3): <img src="https://media.giphy.com/media/kvrvnB158J4fm/giphy.gif" style="width:232px;height:194px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(7.1):GOTO:cats4
+A: No
+	Q(7.2):Bye then. GOTO:bye
+
+Q(cats4): <img src="https://media.giphy.com/media/xBAreNGk5DapO/giphy.gif" style="width:232px;height:188px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(8.1):GOTO:cats5
+A: No
+	Q(8.2):Bye then. GOTO:bye
+
+Q(cats5): <img src="https://media.giphy.com/media/BLCHvwl9C5j1u/giphy.gif" style="width:232px;height:232px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(9.1):GOTO:cats6
+A: No
+	Q(9.2):Bye then. GOTO:bye
+
+Q(cats6): <img src="https://media.giphy.com/media/10dU7AN7xsi1I4/giphy.gif" style="width:232px;height:323px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(10.1):GOTO:cats7
+A: No
+	Q(10.2):Bye then. GOTO:bye
+
+Q(cats7): <img src="https://media.giphy.com/media/hPyONzUYJhLZS/giphy.gif" style="width:232px;height:223px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(11.1):GOTO:cats8
+A: No
+	Q(11.2):Bye then. GOTO:bye
+
+Q(cats8): <img src="https://media.giphy.com/media/Endx3eMpqmpZ6/giphy.gif" style="width:232px;height:142px;"/> <br><br> I know, those are puppies, but they're sooo cute.
+<br><br> Do you need more?
+A: Yes
+	Q(12.1):GOTO:cats9
+A: No
+	Q(12.2):Bye then. GOTO:bye
+
+Q(cats9): <img src="https://media.giphy.com/media/5scVaYq4hKA7u/giphy.gif" style="width:232px;height:130px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(13.1):GOTO:cats10
+A: No
+	Q(13.2):Bye then. GOTO:bye
+
+Q(cats10): <img src="https://media.giphy.com/media/t7MWRoExDRF72/giphy.gif" style="width:232px;height:207px;"/>
+<br><br> Do you need more?
+A: Yes
+	Q(14.1):GOTO:cats
+A: No
+	Q(14.2):Bye then. GOTO:bye
+
+Q(bye): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>
