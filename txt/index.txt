@@ -1,6 +1,6 @@
-Title: Colarusso's Digital Echo
+Title: Colarusso's FAQ "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive FAQ written by Colarusso. Last updating 2019-05-28 12:01pm
+Description: An interactive FAQ written by Colarusso. Last updating 2019-05-28 7:24pm
 Before:
 <style>
 body{
@@ -37,26 +37,36 @@ body{
 }
 </style>
 <div id="icon"></div>
-<h2 align=center style="margin:5px 0 5px;">Colarusso Digitized</h2>
+<h2 align=center style="margin:5px 0 5px;">Colarusso's FAQ "Bot"</h2>
 <p>This interactive FAQ will probably provide an answer <a href="https://twitter.com/Colarusso/status/1131906708501127174" target="_blank">more quickly</a> than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Use it to book a time to talk, figure out if you should take one of my classes, inquire about availability for speaking, earn money, and much much more. ;)</p>
-Q(1): First, I need to know my audience. Are you currently enrolled in one of my classes (or about to be)? 
+Q(1): First, I need to know my audience. Are you currently enrolled in one of my classes (or soon will be)? 
 A: Yes
-	Q(1.1): Have you DMed me on <a href="http://suffolklitlab.slack.com/" target="_blank">the Lab's Slack</a>?
+	Q(1.1): Is this about a problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
 	A: Yes
-		Q(1.1.1): And I sent you here?<br><br><img src="https://media.giphy.com/media/sauYjWmJJ18xW/giphy.gif" style="width:232px;height:171px"/><br><br>Why would I do that? Do you want some cat pictures before you go? 
-		A: Yes
-			Q(1.1.1.1):GOTO:cats
-		A: No
-			Q(1.1.1.2):<img src="https://media.giphy.com/media/jPAdK8Nfzzwt2/giphy.gif" style="width:232px;"/><br><br>I got nothing. GOTO:student
+		Q(problemset): For which class/working group?
+		A: Coding the Law
+			Q(1.1.1.1): Do you need the assignment or help with the assignment?
+			A: The assignment
+			A: Help
+		A: Clinical Fellows
+		A: LIT Lab
 	A: No
-		Q(1.1.2): Do you need help joining our Slack?
+		Q(1.1.2): Have you <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DMed</a> me on <a href="http://suffolklitlab.slack.com/" target="_blank">the Lab's Slack</a>?
 		A: Yes
-			Q(1.1.2.1): You can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs">DM</a> @Colarusso. Ask him to add you to your class's private channel. Let's see if there's anything else. GOTO:student
+			Q(1.1.2.1): And I sent you here?<br><br><img src="https://media.giphy.com/media/sauYjWmJJ18xW/giphy.gif" style="width:232px;height:171px"/><br><br>Why would I do that? Are you sure this wasn't about a problem set, reading, or sprint?
+			A: Yes
+				Q(1.1.2.1.1):<img src="https://media.giphy.com/media/jPAdK8Nfzzwt2/giphy.gif" style="width:232px;"/><br><br>I got nothing. GOTO:student
+			A: No
+				Q(1.1.2.1.2): Okay, let's assume it is. GOTO:problemset
 		A: No
-			Q(1.1.2.2):GOTO:student
+			Q(1.1.2.2): Do you need help joining our Slack?
+			A: Yes
+				Q(1.1.2.2.1): You can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile" target="_blank">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DM</a> @Colarusso. Ask him to add you to your class's private channel. Let's see if there's anything else. GOTO:student
+			A: No
+				Q(1.1.2.2.2):GOTO:student
 
 A: No
-	Q(1.2): Are you a Suffolk student or faculty/staff?
+	Q(1.2): Are you a Suffolk Law student or faculty/staff?
 	A: Yes (student)
 		Q(student): What would you like to do? 
 		A: Have a meeting/call
@@ -69,7 +79,7 @@ A: No
 			Q(1.2.1.4):GOTO:speaker
 	A: Yes (faculty/staff)
 		Q(faculty): What would you like to do? 
-		A: Meet up
+		A: Meet/talk
 			Q(fac_meet):Just <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time that works for you.
 			A: Can I have cat videos?
 				Q(1.2.2.1.1):GOTO:cats
@@ -121,8 +131,10 @@ Q(currentjobs): Cool. Right now, I'm looking for folks able to work about 7 hour
 Q(classes): What class would you like to learn about?
 A: Coding the Law
 	Q(3.1): Would you like to view the course website, syllabus, or have me walk you through the highlights?
-	A: Website
-	A: Syllabus
+	A:[https://www.codingthelaw.org] Website
+		Q(3.1.1): The site should have opened in a new window. Thanks, and bye for now. GOTO:bye
+	A:[] Syllabus
+		Q(3.1.2): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A: Highlights
 A: Legal Innovation & Tech. Lab (LIT)
 	Q(3.2): Would you like to view the lab syllabus, or have me walk you through the highlights?
@@ -130,15 +142,16 @@ A: Legal Innovation & Tech. Lab (LIT)
 	A: Highlights
 A: LIT Fellows program
 
-Q(collab): Cool. I love collaboration. I'm game for both writing and building things. 
 
 Q(hire): Well...
 
+Q(collab): Cool. I love collaboration. Shoot me an email at D Colarusso @ Suffolk dot EDU describing what you're thinking. FWIW, here's <a href="https://osf.io/fya6w/" target="_blank">some of my work</a>.
+A: Thanks, and bye
+	Q(5.1):GOTO:bye
+A: Can I have cat videos?
+	Q(5.2):GOTO:cats
 
-
-
-
-Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>Also, if you aren't a student and you take up one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif" style="width:270px;height:145px;">
+Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>Also, if you aren't a student and you take one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif" style="width:270px;height:145px;">
 A: Okay. I'm not a student, but I want to talk.
 	Q(6.1): Suffolk faculty/staff?
 	A: Yes
@@ -157,7 +170,7 @@ A: Thanks; bye
 A: Can I have cat videos?
 	Q(7.2):GOTO:cats
 
-Q(speaker): The first things you should know is that I don't sit on manels (all-male panels). If you need names, I suggest checking out this list: <a href="https://docs.google.com/spreadsheets/d/1EkEUJFrk4QHh1pHsjdxmftxiYRtM-01HibycpNMe_ik/edit?usp=sharing" target="_blank">(Diverse legal tech) POC and Underepresented People of Legal Tech and Innovation</a>.
+Q(speaker): The first things you should know is that I don't sit on manels (all-male panels). If you need names, I suggest checking out these lists: <a href="https://docs.google.com/spreadsheets/d/1EkEUJFrk4QHh1pHsjdxmftxiYRtM-01HibycpNMe_ik/edit?usp=sharing" target="_blank">Diverse legal tech: POC and Underrepresented People of Legal Tech and Innovation</a> (crowd sourced) & <a href="https://www.americanbar.org/groups/departments_offices/legal_technology_resources/resources/WomenofLegalTech/" target="_blank">Women of Legal Tech</a> (from the ABA's Legal Technology Resource Center).
 A: Of course; that makes sense 
 	Q(8.1): If it's for a nonprofit (e.g., legal aid or law school group) in Boston and I can make it home to read my kids' bedtime stories, I'm inclined to say yes. If travel is involved, I'll probably ask for something to help defer the costs, and if it's for a for-profit, expect a discussion re. speaker's fees.<br><br>You can find some of my old talks <a href="https://suffolklitlab.org/talks/" target="_blank">here</a>. Just email D Colarusso at Suffolk dot EDU, and we'll see if it's a good match.
 	A: Can I have cat videos?
