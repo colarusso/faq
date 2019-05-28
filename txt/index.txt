@@ -1,6 +1,6 @@
 Title: Colarusso's Digital Echo
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive FAQ written by Colarusso. Last updating 2019-05-28 11:15am
+Description: An interactive FAQ written by Colarusso. Last updating 2019-05-28 12:01pm
 Before:
 <style>
 body{
@@ -39,16 +39,21 @@ body{
 <div id="icon"></div>
 <h2 align=center style="margin:5px 0 5px;">Colarusso Digitized</h2>
 <p>This interactive FAQ will probably provide an answer <a href="https://twitter.com/Colarusso/status/1131906708501127174" target="_blank">more quickly</a> than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Use it to book a time to talk, figure out if you should take one of my classes, inquire about availability for speaking, earn money, and much much more. ;)</p>
-Q(1): First, I need to know my audience. Are you currently enrolled one of my classes (or about to be)? 
+Q(1): First, I need to know my audience. Are you currently enrolled in one of my classes (or about to be)? 
 A: Yes
-	Q(1.1): Have you DMed me on our <a href="http://suffolklitlab.slack.com/" target="_blank">Slack</a>?
+	Q(1.1): Have you DMed me on <a href="http://suffolklitlab.slack.com/" target="_blank">the Lab's Slack</a>?
 	A: Yes
-		Q(1.1.1): And I sent you here? Okay, 
-	A: No.
-		Q(1.1.2): Have you asked for help on our Slack channel?
+		Q(1.1.1): And I sent you here?<br><br><img src="https://media.giphy.com/media/sauYjWmJJ18xW/giphy.gif" style="width:232px;height:171px"/><br><br>Why would I do that? Do you want some cat pictures before you go? 
 		A: Yes
+			Q(1.1.1.1):GOTO:cats
 		A: No
-			Q(1.1.2.2): It's personal
+			Q(1.1.1.2):<img src="https://media.giphy.com/media/jPAdK8Nfzzwt2/giphy.gif" style="width:232px;"/><br><br>I got nothing. GOTO:student
+	A: No
+		Q(1.1.2): Do you need help joining our Slack?
+		A: Yes
+			Q(1.1.2.1): You can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs">DM</a> @Colarusso. Ask him to add you to your class's private channel. Let's see if there's anything else. GOTO:student
+		A: No
+			Q(1.1.2.2):GOTO:student
 
 A: No
 	Q(1.2): Are you a Suffolk student or faculty/staff?
