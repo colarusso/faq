@@ -1,6 +1,6 @@
 Title: Colarusso's FAQ "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive FAQ written by Colarusso. Last updating 2019-05-29 1:53pm
+Description: An interactive FAQ written by Colarusso. Last updating 2019-05-29 2:14pm
 Before:
 <style>
 body{
@@ -38,9 +38,9 @@ body{
 </style>
 <div id="icon"></div>
 <h2 align=center style="margin:5px 0 5px;">Colarusso's FAQ "Bot"</h2>
-<p>This tool will provide a reply <a href="https://twitter.com/Colarusso/status/1131906708501127174" target="_blank">more quickly</a> than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Book a meeting/call, figure out if you should take one of my classes, get homework help, earn money, inquire about my availability to speak, and much more. ;)</p>
+<p>This tool replies <a href="https://twitter.com/Colarusso/status/1131906708501127174" target="_blank">more quickly</a> than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Book a meeting/call, figure out if you should take one of my classes, get homework help, earn money, ask about speaking engagements, and much more. ;)</p>
 
-Q(1): First, I need to know my audience. Are you enrolled in one of my classes (or soon will be)? 
+Q(1): Are you enrolled in one of my classes? 
 A: Yes
 	Q(1.1): Is this about a problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
 	A: Yes
@@ -178,7 +178,6 @@ Q(litlab): What follows is just an interactive walk through of <a href="" target
 
 
 Q(litfellows): What follows is just an interactive walk through of <a href="" target="_blank">our handbook</a>. 
-
 
 
 Q(10):<!-- 
