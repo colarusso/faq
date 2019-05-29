@@ -1,6 +1,6 @@
 Title: Colarusso's FAQ "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive FAQ written by Colarusso. Last updating 2019-05-28 7:24pm
+Description: An interactive FAQ written by Colarusso. Last updating 2019-05-28 8:46pm
 Before:
 <style>
 body{
@@ -39,7 +39,7 @@ body{
 <div id="icon"></div>
 <h2 align=center style="margin:5px 0 5px;">Colarusso's FAQ "Bot"</h2>
 <p>This interactive FAQ will probably provide an answer <a href="https://twitter.com/Colarusso/status/1131906708501127174" target="_blank">more quickly</a> than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Use it to book a time to talk, figure out if you should take one of my classes, inquire about availability for speaking, earn money, and much much more. ;)</p>
-Q(1): First, I need to know my audience. Are you currently enrolled in one of my classes (or soon will be)? 
+Q(1): First, I need to know my audience. Are you enrolled in one of my classes (or soon will be)? 
 A: Yes
 	Q(1.1): Is this about a problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
 	A: Yes
