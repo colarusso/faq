@@ -1,6 +1,6 @@
 Title: Colarusso's FAQ "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive FAQ written by Colarusso. Last updating 2019-05-29 2:14pm
+Description: An interactive FAQ written by Colarusso. Last updating 2019-05-29 3:57pm
 Before:
 <style>
 body{
@@ -42,18 +42,14 @@ body{
 
 Q(1): Are you enrolled in one of my classes? 
 A: Yes
-	Q(1.1): Is this about a problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
-	A: Yes
-		Q(1.1.1):GOTO:problemset
-	A: No
-		Q(1.1.2):GOTO:DMed
+	Q(1.1):GOTO:DMed
 A: No
 	Q(1.2): Are you a Suffolk Law student or faculty/staff?
 	A: Yes (student)
 		Q(student): What would you like to do? 
 		A: Have a meeting/call
 			Q(1.2.1.1):GOTO:officehours
-		A: Learn about the classes you teach
+		A: Learn about a class you teach
 			Q(1.2.1.2):GOTO:classes
 		A: Learn about paid research openings 
 			Q(1.2.1.3):GOTO:paid
@@ -65,7 +61,7 @@ A: No
 		Q(faculty): What would you like to do? 
 		A: Meet/talk
 			Q(1.2.2.1):GOTO:fac_meet
-		A: Learn about the classes you teach
+		A: Learn about a classes you teach
 			Q(1.2.2.2):GOTO:classes
 		A: "Hire"/learn about the LIT Lab
 			Q(1.2.2.3):GOTO:fac_hire
@@ -77,7 +73,7 @@ A: No
 			Q(1.2.2.6):GOTO:speaker
 	A: No
 		Q(external): What would you like to do? 
-		A: Learn about the classes you teach
+		A: Learn about a class you teach
 			Q(1.2.3.1):GOTO:classes
 		A: "Hire"/learn about the LIT Lab
 			Q(1.2.3.2):GOTO:ex_hire
@@ -96,7 +92,7 @@ A: Wait, did you say "earn money?"
 Q(no_RA_student): What would you like to do? 
 A: Have a meeting/call
 	Q(2.1):GOTO:officehours
-A: Learn about the classes you teach
+A: Learn about a class you teach
 	Q(2.2):GOTO:classes
 A: Learn about your background
 	Q(2.3):GOTO:background
@@ -114,13 +110,11 @@ Q(problemset): For which class/working group?
 A: Coding the Law
 	Q(4.1): Do you need the current assignment or help with an assignment?
 	A: The assignment
-		Q(4.1.1): You can find the first class assignment on our schedule <a href="" target="_blank">here</a>. Would you like to review highlights from the syllabus?  
-		A: Yes
-			Q(4.1.1.1):GOTO:ctl
-		A: No thanks
-			Q(4.1.1.2):GOTO:bye
+		Q(4.1.1): You can find the first class assignment on our schedule <a href="" target="_blank">here</a>.
+		A: Thanks, bye
+			Q(4.1.1.1):GOTO:bye
 		A: Can I have cat videos?
-			Q(4.1.1.3):GOTO:cats
+			Q(4.1.1.2):GOTO:cats
 	A: Help
 		Q(4.1.2): After our first class, I'll start to provide relevant interactive aids here (e.g., debugger guides etc.). 
 		A: Thanks, and bye
@@ -142,13 +136,12 @@ A: LIT Lab
 
 Q(currentjobs): Cool. Right now, I'm looking for folks able to work about 7 hours a week during the Fall 2019 semester. There are spots for folks to do traditional legal research, issue spotting, or light engineering work. You'd be working on <a href="https://lawyerist.com/learned-hands-launch/" target="_blank">this project</a>. Interested? 
 A: Yes
-	Q(5.1): Shoot an email cover letter with your resume to D Colarusso at Suffolk dot EDU, subject line, "LIT Lab RA Position." Let's see if there's anything else. GOTO:no_RA_student
-
+	Q(5.1): Shoot an email cover letter with your resume to D Colarusso at Suffolk dot EDU, subject line, "LIT Lab RA Position." Let's see if there's anything else I can help with. GOTO:no_RA_student
 A: No
 	Q(5.2):GOTO:no_RA_student
 
 
-Q(classes): What class would you like to learn about?
+Q(classes): Which class?
 A: Coding the Law
 	Q(6.1): Would you like to view the course website, syllabus, or have me walk you through the highlights?
 	A:[https://www.codingthelaw.org] Website
@@ -187,33 +180,39 @@ Q(10):<!--
 -->
 
 
-Q(fac_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>Occasionally we'll work on projects for faculty/staff. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time to talk that works for you.
+Q(fac_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>Occasionally we'll work on projects for faculty/staff. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time to talk.
 A: Thanks, bye
 	Q(11.1):GOTO:bye
 A: Can I have cat videos?
 	Q(11.2):GOTO:cats
 
 
-Q(ex_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>We serve both non-profit and for-profit clients, with the latter subsidizing the former, when appropriate. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/call" target="_blank">click through here</a> and book a time to talk that works for you.
+Q(ex_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>We serve both non-profit and for-profit clients, with the latter subsidizing the former, when appropriate. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/call" target="_blank">click through here</a> and book a time to talk.
 A: Thanks, bye
 	Q(12.1):GOTO:bye
 A: Can I have cat videos?
 	Q(12.2):GOTO:cats
 
 
-Q(DMed): Have you <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DMed</a> me on <a href="http://suffolklitlab.slack.com/" target="_blank">the Lab's Slack</a>?
+Q(DMed): Did you send me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>?
+A: No, I'd like to try the FAQ first
+	Q(aboutwhat): Is this about a specific problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
+	A: Yes
+		Q(13.1.1):GOTO:problemset
+	A: No
+		Q(13.1.2):Do you want to look at the docs/policies for a class (e.g., the syllabus)? 
+		A: Yes
+			Q(13.1.2.1):GOTO:classes
+		A: No
+			Q(13.1.2.2):GOTO:student
+A: No, I need help with Slack
+	Q(13.2): If you haven't already, you can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile" target="_blank">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DM</a> @Colarusso. Ask him to add you to your class's private channel.
+	A: Thanks, bye
+		Q(13.2.1):GOTO:bye
+	A: Can I have cat videos?
+		Q(13.2.2):GOTO:cats
 A: Yes
-	Q(13.1): And I sent you here?<br><br><img src="https://media.giphy.com/media/sauYjWmJJ18xW/giphy.gif" style="width:232px;height:171px"/><br><br>Why would I do that? Are you sure this wasn't about a problem set, reading, or sprint?
-	A: Yes
-		Q(13.1.1):<img src="https://media.giphy.com/media/jPAdK8Nfzzwt2/giphy.gif" style="width:232px;"/><br><br>I got nothing. GOTO:student
-	A: No
-		Q(13.1.2): Okay, let's assume it is. GOTO:problemset
-A: No
-	Q(13.2): Do you need help joining our Slack?
-	A: Yes
-		Q(13.2.1): You can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile" target="_blank">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DM</a> @Colarusso. Ask him to add you to your class's private channel. Let's see if there's anything else. GOTO:student
-	A: No
-		Q(13.2.2):GOTO:student
+	Q(13.3):If I haven't replied yet, don't worry, I will soon. Either way... GOTO:aboutwhat
 
 
 Q(collab): Cool. I love collaboration. Shoot me an email to D Colarusso at Suffolk dot EDU describing what you're thinking. FWIW, here's <a href="https://osf.io/fya6w/" target="_blank">some of my work</a>.
@@ -223,7 +222,7 @@ A: Can I have cat videos?
 	Q(14.2):GOTO:cats
 
 
-Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>Also, if you aren't a student and you take one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif" style="width:270px;height:145px;">
+Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>If you aren't a student and you take one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif" style="width:270px;height:145px;">
 A: Okay. I'm not a student, but I want to talk.
 	Q(15.1): Suffolk faculty/staff?
 	A: Yes
@@ -307,7 +306,7 @@ A: Yes, but I need credits, not cash
 	A: More about paid positions
 		Q(21.2.2):GOTO:paid
 A: No
-	Q(21.3): Sorry. Currently we're only set up to hire Suffolk students. <BR><BR>Are you a Suffolk faculty or staff member are you?
+	Q(21.3): Sorry. Currently we're only set up to hire Suffolk students. <BR><BR>Are you a Suffolk faculty or staff member?
 	A: Yes
 		Q(21.3.1):Go Rams! GOTO:faculty
 	A: No
