@@ -42,11 +42,11 @@ body{
 
 Q(1): Are you enrolled in one of my classes? 
 A: Yes
-	Q(1.1):GOTO:DMed
+	Q(1.1):<img src="https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif" style="width:232px;height:169px;">GOTO:DMed
 A: No
 	Q(1.2): Are you a Suffolk Law student or faculty/staff?
 	A: Yes (student)
-		Q(student): What would you like to do? 
+		Q(student):What would you like to do? 
 		A: Have a meeting/call
 			Q(1.2.1.1):GOTO:officehours
 		A: Learn about a class you teach
@@ -194,7 +194,7 @@ A: Can I have cat videos?
 	Q(12.2):GOTO:cats
 
 
-Q(DMed): Did you send me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>?
+Q(DMed): Did you send me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>? We have GIFs turned on.
 A: No, I'd like to try the FAQ first
 	Q(aboutwhat): Is this about a specific problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
 	A: Yes
