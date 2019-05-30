@@ -47,12 +47,12 @@ A: No
 	Q(1.2): Are you a Suffolk Law student or faculty/staff?
 	A: Yes (student)
 		Q(student):What would you like to do? 
-		A: Have a meeting/call
-			Q(1.2.1.1):GOTO:officehours
 		A: Learn about a class you teach
-			Q(1.2.1.2):GOTO:classes
+			Q(1.2.1.1):GOTO:classes
 		A: Learn about paid research openings 
-			Q(1.2.1.3):GOTO:paid
+			Q(1.2.1.2):GOTO:paid
+		A: Have a meeting/call
+			Q(1.2.1.3):GOTO:officehours
 		A: Learn about your background
 			Q(1.2.1.4):GOTO:background
 		A: Book you as a speaker
@@ -194,7 +194,7 @@ A: Can I have cat videos?
 	Q(12.2):GOTO:cats
 
 
-Q(DMed): Did you send me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>? We have GIFs turned on.
+Q(DMed): Did you try sending me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>? We have GIFs turned on.
 A: No, I'd like to try the FAQ first
 	Q(aboutwhat): Is this about a specific problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
 	A: Yes
@@ -223,7 +223,7 @@ A: Can I have cat videos?
 
 
 Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>If you aren't a student and you take one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif" style="width:270px;height:145px;">
-A: Okay. I'm not a student, but I want to talk.
+A: I'm not a student, but I want to talk.
 	Q(15.1): Suffolk faculty/staff?
 	A: Yes
 		Q(15.1.1):GOTO:fac_meet
@@ -301,7 +301,7 @@ A: Yes
 		Q(21.1.2):<img src="https://media.giphy.com/media/o6KYXl09rnmOQ/giphy.gif" style="width:232px;height:131px;"/><br><br> Okay... it's probably not a good fit. Let's try something else. GOTO:no_RA_student
 A: Yes, but I need credits, not cash
 	Q(21.2): If you're interested in credits, I suggest checking out one of my classes. E.g., the work of Lab students is often similar to that of my RAs. 
-	A: More bout classes
+	A: More about classes
 		Q(21.2.1):GOTO:classes
 	A: More about paid positions
 		Q(21.2.2):GOTO:paid
