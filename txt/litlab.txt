@@ -1,44 +1,8 @@
-Title: LIT Lab Interactive Syllabus 
+Title: LIT Lab Syllabus "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive syllabus for the <a href="https://www.codingthelaw.org" target="_blank">LIT Lab</a>. 
+Description: An interactive syllabus for the <a href="https://suffolklitlab.org/courses/lab/" target="_blank">LIT Lab</a>. 
+After:<script src="https://colarusso.github.io/faq/js_bin/scripts.js"></script>
 Before:
-<script>
-function loadQnA(url_point,button) {
-  // Note: this only works with A tags, not X tags. 
-  // The QnA you are loading must be on the same domain as the QnA calling it.
-
-  $.ajax({ url: url_point, success: function(data) { 
-
-    var mydata = $(data).find('div[id=ondeck]');
-    var placeholder = Date.now();
-    mydata  =  mydata.html(mydata.html().replace(/GOTO:/g,"GOTO:"+placeholder+"."));
-    console.log(mydata.html())
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="Q-/gi, ' $1="Q-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="A-(target-|href-|)/gi, ' $1="A-$2'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="X-/gi, ' $1="X-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="Xi-/gi, ' $1="Xi-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/var QVnames =/gi, 'QVnames_placeholder ='));
-    
-    mydate = mydata.html(mydata.html() + "<div id='A-"+placeholder+".1' name='A-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
-    mydate = mydata.html(mydata.html() + "<div id='X-"+placeholder+".1' name='X-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
-
-    var QVNames_tmp = QVnames;
-    $('#ondeck').html($('#ondeck').html()+mydate.html());
-    QVnames = QVNames_tmp     
-    for (var i in QVnames_placeholder) {
-      //check to see if [][1] is a custom name, if so leave it alone
-      if (QVnames_placeholder[i][1].match(/[a-z]/i)) {
-        QVnames.push([placeholder+'.'+QVnames_placeholder[i][0],QVnames_placeholder[i][1]])
-      } else {
-        QVnames.push([placeholder+'.'+QVnames_placeholder[i][0],placeholder+'.'+QVnames_placeholder[i][1]])
-      }
-    }
-
-    answerQ(placeholder+.1);
-
-  } });
-}
-</script>
 <style>
 body{
     background:white;
@@ -74,15 +38,15 @@ body{
 }
 </style>
 <div id="icon"></div>
-<h2 align=center style="margin:5px 0 5px;">Legal Innovation & Tech. Lab</h2>
-<p>This is an interactive syllabus for Suffolk Law's project-based <a href="https://www.codingthelaw.org" target="_blank">Coding The Law</a> (2 experiential credits; Fall 2019, Mondays from 4-5:50pm in Sargent Hall, Room 325). To get homework help, book office hours, and the like, visit <a href="https://colarusso.github.io/faq/" target="_blank">the FAQ "Bot."</a></p>
+<h2 align=center style="margin:5px 0 5px;">LIT Lab Syllabus "Bot"</h2>
+<p>This is an interactive syllabus for Suffolk Law's project-based <a href="https://suffolklitlab.org/courses/lab/" target="_blank">LIT Lab</a> (2 experiential credits; Fall 2019, Tuesdays from 4-5:50pm in Sargent Hall, <a href="https://suffolklitlab.org/find/" target="_blank">Room 685E</a>). To get homework help, book office hours, and the like, visit <a href="https://colarusso.github.io/faq/" target="_blank">the FAQ "Bot."</a></p>
 
 Q(1): What would you like to know?
 A: Who should take this class
 	Q(1.1):GOTO:comfort
 A: What the work is like
 A: Course policies
-A: Do students learn to make "bots" like this?
+A: Do students build "bots" like this?
 	Q(1.4):GOTO:qna
 
 

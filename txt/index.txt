@@ -1,44 +1,8 @@
 Title: Colarusso's FAQ "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive FAQ written by Colarusso. Last updating 2019-06-03 11:32pm
+Description: An interactive FAQ written by Colarusso. Last updating 2019-06-03 2:16pm
+After:<script src="https://colarusso.github.io/faq/js_bin/scripts.js"></script>
 Before:
-<script>
-function loadQnA(url_point,button) {
-  // Note: this only works with A tags, not X tags. 
-  // The QnA you are loading must be on the same domain as the QnA calling it.
-
-  $.ajax({ url: url_point, success: function(data) { 
-
-    var mydata = $(data).find('div[id=ondeck]');
-    var placeholder = Date.now();
-    mydata  =  mydata.html(mydata.html().replace(/GOTO:/g,"GOTO:"+placeholder+"."));
-    console.log(mydata.html())
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="Q-/gi, ' $1="Q-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="A-(target-|href-|)/gi, ' $1="A-$2'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="X-/gi, ' $1="X-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/ (id|name)="Xi-/gi, ' $1="Xi-'+placeholder+'.'));
-    mydate = mydata.html(mydata.html().replace(/var QVnames =/gi, 'QVnames_placeholder ='));
-    
-    mydate = mydata.html(mydata.html() + "<div id='A-"+placeholder+".1' name='A-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
-    mydate = mydata.html(mydata.html() + "<div id='X-"+placeholder+".1' name='X-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
-
-    var QVNames_tmp = QVnames;
-    $('#ondeck').html($('#ondeck').html()+mydate.html());
-    QVnames = QVNames_tmp     
-    for (var i in QVnames_placeholder) {
-      //check to see if [][1] is a custom name, if so leave it alone
-      if (QVnames_placeholder[i][1].match(/[a-z]/i)) {
-        QVnames.push([placeholder+'.'+QVnames_placeholder[i][0],QVnames_placeholder[i][1]])
-      } else {
-        QVnames.push([placeholder+'.'+QVnames_placeholder[i][0],placeholder+'.'+QVnames_placeholder[i][1]])
-      }
-    }
-
-    answerQ(placeholder+.1);
-
-  } });
-}
-</script>
 <style>
 body{
     background:white;
@@ -76,6 +40,7 @@ body{
 <div id="icon"></div>
 <h2 align=center style="margin:5px 0 5px;">Colarusso's FAQ "Bot"</h2>
 <p>This tool replies <a href="https://twitter.com/Colarusso/status/1131906708501127174" target="_blank">more quickly</a> than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Book a meeting/call, figure out if you should take one of my classes, get homework help, earn money, ask about speaking engagements, and much more. ;)</p>
+
 
 Q(1): Are you currently taking one of my classes? 
 A: Yes
@@ -149,7 +114,7 @@ Q(problemset): For which class/working group?
 A: Coding the Law
 	Q(4.1): Do you need the current assignment or help with an assignment?
 	A: The assignment
-		Q(4.1.1): You can find the first class assignment on our schedule <a href="" target="_blank">here</a>.
+		Q(4.1.1): You can find the first class assignment on our schedule <a href="https://docs.google.com/document/d/1_pjMS1TgK4g6n4X5BuNdzVPySMVnyzD3TUUC2xFuyf0/edit#heading=h.vhxizn9d163v" target="_blank">here</a>.
 		A: Thanks, bye
 			Q(4.1.1.1):GOTO:bye
 		A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
