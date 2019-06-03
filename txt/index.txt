@@ -40,11 +40,11 @@ body{
 <h2 align=center style="margin:5px 0 5px;">Colarusso's FAQ "Bot"</h2>
 <p>This tool replies <a href="https://twitter.com/Colarusso/status/1131906708501127174" target="_blank">more quickly</a> than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Book a meeting/call, figure out if you should take one of my classes, get homework help, earn money, ask about speaking engagements, and much more. ;)</p>
 
-Q(1): Are you enrolled in one of my classes? 
+Q(1): Are you currently taking one of my classes? 
 A: Yes
 	Q(1.1):<img src="https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif" style="width:232px;height:169px;">GOTO:DMed
 A: No
-	Q(1.2): Are you a Suffolk Law student or faculty/staff?
+	Q(1.2): Are you a Suffolk Law student or Suffolk faculty/staff?
 	A: Yes (student)
 		Q(student):What would you like to do? 
 		A: Learn about a class you teach
@@ -90,14 +90,16 @@ A: Wait, did you say "earn money?"
 
 
 Q(no_RA_student): What would you like to do? 
+A: Get homework help
+	Q(2.1):GOTO:problemset
 A: Have a meeting/call
-	Q(2.1):GOTO:officehours
+	Q(2.2):GOTO:officehours
 A: Learn about a class you teach
-	Q(2.2):GOTO:classes
+	Q(2.3):GOTO:classes
 A: Learn about your background
-	Q(2.3):GOTO:background
+	Q(2.4):GOTO:background
 A: Book you as a speaker
-	Q(2.4):GOTO:speaker
+	Q(2.5):GOTO:speaker
 
 
 Q(3):<!-- 
@@ -123,9 +125,19 @@ A: Coding the Law
 			Q(4.1.2.2):GOTO:cats
 
 A: Clinical Fellows
+	Q(4.2): After our first session, I'll start to provide relevant interactive aids here (e.g., debugger guides etc.). 
+	A: Thanks, and bye
+		Q(4.2.1):GOTO:bye
+	A: Can I have cat videos?
+		Q(4.2.2):GOTO:cats
 A: LIT Lab
+	Q(4.3): After our first session, I'll start to provide relevant interactive aids here (e.g., debugger guides etc.). 
+	A: Thanks, and bye
+		Q(4.3.1):GOTO:bye
+	A: Can I have cat videos?
+		Q(4.3.2):GOTO:cats
 
-<!-- 
+Q(5):<!-- 
 ################################
         END EDIT WEEKLY
 ################################
@@ -134,34 +146,34 @@ A: LIT Lab
 -->
 
 
-Q(currentjobs): Cool. Right now, I'm looking for folks able to work about 7 hours a week during the Fall 2019 semester. There are spots for folks to do traditional legal research, issue spotting, or light engineering work. You'd be working on <a href="https://lawyerist.com/learned-hands-launch/" target="_blank">this project</a>. Interested? 
+Q(currentjobs): Right now, I'm looking for folks able to work about 7 hours a week during the Fall 2019 semester. There are spots for folks to do traditional legal research, issue spotting, or light engineering work. You'd be working on <a href="https://lawyerist.com/learned-hands-launch/" target="_blank">this project</a>. Interested? 
 A: Yes
-	Q(5.1): Shoot an email cover letter with your resume to D Colarusso at Suffolk dot EDU, subject line, "LIT Lab RA Position." Let's see if there's anything else I can help with. GOTO:no_RA_student
+	Q(6.1): Shoot an email cover letter with your resume to D Colarusso at Suffolk dot EDU, subject line, "LIT Lab RA Position."<br><br> Let's see if there's anything else I can help with. GOTO:no_RA_student
 A: No
-	Q(5.2):GOTO:no_RA_student
+	Q(6.2):GOTO:no_RA_student
 
 
 Q(classes): Which class?
 A: Coding the Law
-	Q(6.1): Would you like to view the course website, syllabus, or have me walk you through the highlights?
+	Q(7.1): Would you like to view the course website, syllabus, or have me walk you through the highlights?
 	A:[https://www.codingthelaw.org] Website
-		Q(6.1.1): The site should have opened in a new window. Thanks, and bye for now. GOTO:bye
+		Q(7.1.1): The site should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[] Syllabus
-		Q(6.1.2): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
+		Q(7.1.2): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A: Highlights
-		Q(6.1.3):GOTO:ctl
+		Q(7.1.3):GOTO:ctl
 A: Legal Innovation & Tech. Lab (LIT)
-	Q(6.2): Would you like to view the lab syllabus, or have me walk you through the highlights?
+	Q(7.2): Would you like to view the lab syllabus, or have me walk you through the highlights?
 	A:[] Syllabus
-		Q(6.2.1): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
+		Q(7.2.1): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A: Highlights
-		Q(6.2.2):GOTO:litlab
+		Q(7.2.2):GOTO:litlab
 A: LIT Fellows program
-	Q(6.3): Would you like to view the LIT Fellows' Handbook, or have me walk you through the highlights?
+	Q(7.3): Would you like to view the LIT Fellows' Handbook, or have me walk you through the highlights?
 	A:[] Handbook
-		Q(6.3.1): The handbook should have opened in a new window. Thanks, and bye for now. GOTO:bye
+		Q(7.3.1): The handbook should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A: Highlights
-		Q(6.3.2):GOTO:litfellows
+		Q(7.3.2):GOTO:litfellows
 
 
 Q(ctl): What follows is just an interactive walk through of <a href="" target="_blank">our syllabus</a>. 
@@ -173,7 +185,7 @@ Q(litlab): What follows is just an interactive walk through of <a href="" target
 Q(litfellows): What follows is just an interactive walk through of <a href="" target="_blank">our handbook</a>. 
 
 
-Q(10):<!-- 
+Q(11):<!-- 
 ################################
       END EDIT EVERY TERM
 ################################
@@ -182,197 +194,197 @@ Q(10):<!--
 
 Q(fac_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>Occasionally we'll work on projects for faculty/staff. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time to talk.
 A: Thanks, bye
-	Q(11.1):GOTO:bye
+	Q(12.1):GOTO:bye
 A: Can I have cat videos?
-	Q(11.2):GOTO:cats
+	Q(12.2):GOTO:cats
 
 
 Q(ex_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>We serve both non-profit and for-profit clients, with the latter subsidizing the former, when appropriate. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/call" target="_blank">click through here</a> and book a time to talk.
 A: Thanks, bye
-	Q(12.1):GOTO:bye
+	Q(13.1):GOTO:bye
 A: Can I have cat videos?
-	Q(12.2):GOTO:cats
+	Q(13.2):GOTO:cats
 
 
 Q(DMed): Did you try sending me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>? We have GIFs turned on.
 A: No, I'd like to try the FAQ first
 	Q(aboutwhat): Is this about a specific problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
 	A: Yes
-		Q(13.1.1):GOTO:problemset
+		Q(14.1.1):GOTO:problemset
 	A: No
-		Q(13.1.2):Do you want to look at the docs/policies for a class (e.g., the syllabus)? 
+		Q(14.1.2):Do you want to look at the docs/policies for a class (e.g., the syllabus)? 
 		A: Yes
-			Q(13.1.2.1):GOTO:classes
+			Q(14.1.2.1):GOTO:classes
 		A: No
-			Q(13.1.2.2):GOTO:student
+			Q(14.1.2.2):GOTO:student
 A: No, I need help with Slack
-	Q(13.2): If you haven't already, you can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile" target="_blank">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DM</a> @Colarusso. Ask him to add you to your class's private channel.
+	Q(14.2): If you haven't already, you can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile" target="_blank">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DM</a> @Colarusso. Ask him to add you to your class's private channel.
 	A: Thanks, bye
-		Q(13.2.1):GOTO:bye
+		Q(14.2.1):GOTO:bye
 	A: Can I have cat videos?
-		Q(13.2.2):GOTO:cats
+		Q(14.2.2):GOTO:cats
 A: Yes
-	Q(13.3):If I haven't replied yet, don't worry, I will soon. Either way... GOTO:aboutwhat
+	Q(14.3):If I haven't replied yet, don't worry, I will soon. Either way... GOTO:aboutwhat
 
 
-Q(collab): Cool. I love collaboration. Shoot me an email to D Colarusso at Suffolk dot EDU describing what you're thinking. FWIW, here's <a href="https://osf.io/fya6w/" target="_blank">some of my work</a>.
-A: Thanks, and bye
-	Q(14.1):GOTO:bye
+Q(collab): Cool. I love collaboration. Shoot me an email at D Colarusso at Suffolk dot EDU describing what you're thinking. FWIW, here's <a href="https://osf.io/fya6w/" target="_blank">some of my work</a>.
+A: Thanks, bye
+	Q(15.1):GOTO:bye
 A: Can I have cat videos?
-	Q(14.2):GOTO:cats
+	Q(15.2):GOTO:cats
 
 
 Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>If you aren't a student and you take one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif" style="width:270px;height:145px;">
 A: I'm not a student, but I want to talk.
-	Q(15.1): Suffolk faculty/staff?
+	Q(16.1): Suffolk faculty/staff?
 	A: Yes
-		Q(15.1.1):GOTO:fac_meet
+		Q(16.1.1):GOTO:fac_meet
 	A: No
-		Q(15.1.2):GOTO:ex_meet
+		Q(16.1.2):GOTO:ex_meet
 A: Can I have cat videos?
-	Q(15.2):GOTO:cats
+	Q(16.2):GOTO:cats
 A: Bye
-	Q(15.3):GOTO:bye
+	Q(16.3):GOTO:bye
 
 
 Q(background): We'll it's pretty eclectic. You should probably just check out my eponymous website—<a href="http://davidcolarusso.com/" target="_blank">David Colarusso</a>.
-A: Thanks; bye
-	Q(16.1):GOTO:bye
+A: Thanks, bye
+	Q(17.1):GOTO:bye
 A: Can I have cat videos?
-	Q(16.2):GOTO:cats
+	Q(17.2):GOTO:cats
 
 
 Q(speaker): The first things you should know is that I don't sit on manels (all-male panels). If you need names, I suggest checking out these lists: <a href="https://docs.google.com/spreadsheets/d/1EkEUJFrk4QHh1pHsjdxmftxiYRtM-01HibycpNMe_ik/edit?usp=sharing" target="_blank">Diverse legal tech: POC and Underrepresented People of Legal Tech and Innovation</a> (crowd-sourced) & <a href="https://www.americanbar.org/groups/departments_offices/legal_technology_resources/resources/WomenofLegalTech/" target="_blank">Women of Legal Tech</a> (from the ABA's Legal Technology Resource Center).
 A: Of course; that makes sense 
-	Q(17.1): If it's for a nonprofit (e.g., legal aid or law school group) in Boston and I can make it home to read my kids' bedtime stories, I'm inclined to say yes. If travel is involved, I'll probably ask for something to help defer the costs, and if it's for a for-profit, expect a discussion re. speaker's fees.<br><br>You can find some of my old talks <a href="https://suffolklitlab.org/talks/" target="_blank">here</a>. Just email D Colarusso at Suffolk dot EDU, and we'll see if it's a good match.
+	Q(18.1): If it's for a nonprofit (e.g., legal aid or law school group) in Boston, and I can make it home to read my kids' bedtime stories, I'm inclined to say yes. If travel is involved, I'll probably ask for something to help defer the costs, and if it's for a for-profit, expect a discussion re. speaker's fees.<br><br>You can find some of my old talks <a href="https://suffolklitlab.org/talks/" target="_blank">here</a>. Just email D Colarusso at Suffolk dot EDU, and we'll see if it's a good match.
+	A: Thanks, bye
+		Q(18.1.1):GOTO:bye
 	A: Can I have cat videos?
-		Q(17.1.1):GOTO:cats
-	A: Bye
-		Q(17.1.2):GOTO:bye
+		Q(18.1.2):GOTO:cats
 A: Can I have cat videos?
-	Q(17.2):GOTO:cats
+	Q(18.2):GOTO:cats
 A: Bye
-	Q(17.3):GOTO:bye
+	Q(18.3):GOTO:bye
 
 
 Q(fac_meet):Just <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time that works for you.
+A: Thanks, bye
+	Q(19.1):GOTO:bye
 A: Can I have cat videos?
-	Q(18.1):GOTO:cats
-A: Bye
-	Q(18.2):GOTO:bye
+	Q(19.2):GOTO:cats
 
 
 Q(ex_meet): <img src="https://media.giphy.com/media/4dAqzSvxV15Is/source.gif" style="width:232px;height:131px;"/><br><br> FWIW, many of my pre-set options lead to a link that will let you book a meeting, but they also include info that might make the need for a call moot. 
 A: Can I see those options?
-	Q(19.1): Sure. GOTO:external
+	Q(20.1): Sure. GOTO:external
 A: None of the options were relevant
-	Q(19.2): Fair enough. ;) GOTO:call
+	Q(20.2): Fair enough. ;) GOTO:call
 A: I really hate "phone" trees
-	Q(19.3):<img src="https://media.giphy.com/media/2UIcmK4pn7rYNLRboG/giphy.gif" style="width:232px;height:232px;"><br><br>I hear you. Sorry for the Schrödinger GIF, but I'm just a flowchart trying to get you what you need. GOTO:call
+	Q(20.3):<img src="https://media.giphy.com/media/2UIcmK4pn7rYNLRboG/giphy.gif" style="width:232px;height:232px;"><br><br>I hear you. Sorry for the Schrödinger GIF, but I'm just a flowchart trying to get you what you need. GOTO:call
 A: Dude, I just want an email!
-	Q(19.4): <img src="https://media.giphy.com/media/ktCzb8Rm8aoow/giphy.gif" style="width:232px;height:131px;"><br><br>And I'm just like a flowchart. Try D Colarusso at Suffolk dot EDU, but remember, the above branches might have some valuable info. 
-	A: Thanks; bye
-		Q(19.4.1):GOTO:bye
+	Q(20.4): <img src="https://media.giphy.com/media/ktCzb8Rm8aoow/giphy.gif" style="width:232px;height:131px;"><br><br>And I'm just like a flowchart. Try D Colarusso at Suffolk dot EDU, but remember, the above branches might have some valuable info. 
+	A: Thanks, bye
+		Q(20.4.1):GOTO:bye
 	A: Can I have cat videos?
-		Q(19.4.2):GOTO:cats
+		Q(20.4.2):GOTO:cats
 
 
 Q(call): Are you selling something? 
 A: Yes
-	Q(20.1):<img src="https://media.giphy.com/media/3o6wrFfvR3vnV71iG4/giphy.gif" style="width:232px;height:175px;"/><br><br> I'm really not interested, and even if I were, I don't have the budget. 
+	Q(21.1):<img src="https://media.giphy.com/media/3o6wrFfvR3vnV71iG4/giphy.gif" style="width:232px;height:175px;"/><br><br> I'm really not interested, and even if I were, I don't have the budget. 
 	A: Thank you, and good bye.
-		Q(20.1.1):GOTO:bye
+		Q(21.1.1):GOTO:bye
 	A: Can I have cat videos?
-		Q(20.1.2):GOTO:cats
+		Q(21.1.2):GOTO:cats
 A: No
 	Q(notselling):You can find a time for and book a call by following <A href="https://calendly.com/dcolarusso/call" target="_blank">this link</a>. 
 	A: Thanks, bye
-		Q(20.2.1):GOTO:bye
+		Q(21.2.1):GOTO:bye
 	A: Can I have cat videos?
-		Q(20.2.2):GOTO:cats
+		Q(21.2.2):GOTO:cats
 
 
 Q(RAs): Yes. Most semesters (including summer session) I hire paid research assistants. Are you a Suffolk University student (law, undergrad, or grad)?
 A: Yes
 	Q(paid): Are you interested in the law, legal tech, or software engineering? 
 	A: Yes
-		Q(21.1.1):GOTO:currentjobs
+		Q(22.1.1):GOTO:currentjobs
 	A: No
-		Q(21.1.2):<img src="https://media.giphy.com/media/o6KYXl09rnmOQ/giphy.gif" style="width:232px;height:131px;"/><br><br> Okay... it's probably not a good fit. Let's try something else. GOTO:no_RA_student
+		Q(22.1.2):<img src="https://media.giphy.com/media/o6KYXl09rnmOQ/giphy.gif" style="width:232px;height:131px;"/><br><br> Okay... it's probably not a good fit. Let's try something else. GOTO:no_RA_student
 A: Yes, but I need credits, not cash
-	Q(21.2): If you're interested in credits, I suggest checking out one of my classes. E.g., the work of Lab students is often similar to that of my RAs. 
+	Q(22.2): If you're interested in credits, I suggest checking out my classes. E.g., the work of Lab students is often similar to that of my RAs. 
 	A: More about classes
-		Q(21.2.1):GOTO:classes
+		Q(22.2.1):GOTO:classes
 	A: More about paid positions
-		Q(21.2.2):GOTO:paid
+		Q(22.2.2):GOTO:paid
 A: No
-	Q(21.3): Sorry. Currently we're only set up to hire Suffolk students. <BR><BR>Are you a Suffolk faculty or staff member?
+	Q(22.3): Sorry. Currently we're only set up to hire Suffolk students. <BR><BR>Are you Suffolk faculty or staff?
 	A: Yes
-		Q(21.3.1):Go Rams! GOTO:faculty
+		Q(22.3.1):Go Rams! GOTO:faculty
 	A: No
-		Q(21.3.2):GOTO:external
+		Q(22.3.2):GOTO:external
 
 
 Q(cats): <img src="https://media.giphy.com/media/Ov5NiLVXT8JEc/giphy.gif" style="width:232px;height:130px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(22.1):GOTO:cats2
+	Q(23.1):GOTO:cats2
 A: No
-	Q(22.2):Bye then. GOTO:bye
+	Q(23.2):Bye then. GOTO:bye
 Q(cats2): <img src="https://media.giphy.com/media/gl8ymnpv4Sqha/giphy.gif" style="width:232px;height:195px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(23.1):GOTO:cats3
+	Q(24.1):GOTO:cats3
 A: No
-	Q(23.2):Bye then. GOTO:bye
+	Q(24.2):Bye then. GOTO:bye
 Q(cats3): <img src="https://media.giphy.com/media/kvrvnB158J4fm/giphy.gif" style="width:232px;height:194px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(24.1):GOTO:cats4
+	Q(25.1):GOTO:cats4
 A: No
-	Q(24.2):Bye then. GOTO:bye
+	Q(25.2):Bye then. GOTO:bye
 Q(cats4): <img src="https://media.giphy.com/media/xBAreNGk5DapO/giphy.gif" style="width:232px;height:188px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(25.1):GOTO:cats5
+	Q(26.1):GOTO:cats5
 A: No
-	Q(25.2):Bye then. GOTO:bye
+	Q(26.2):Bye then. GOTO:bye
 Q(cats5): <img src="https://media.giphy.com/media/BLCHvwl9C5j1u/giphy.gif" style="width:232px;height:232px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(26.1):GOTO:cats6
+	Q(27.1):GOTO:cats6
 A: No
-	Q(26.2):Bye then. GOTO:bye
+	Q(27.2):Bye then. GOTO:bye
 Q(cats6): <img src="https://media.giphy.com/media/10dU7AN7xsi1I4/giphy.gif" style="width:232px;height:323px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(27.1):GOTO:cats7
+	Q(28.1):GOTO:cats7
 A: No
-	Q(27.2):Bye then. GOTO:bye
+	Q(28.2):Bye then. GOTO:bye
 Q(cats7): <img src="https://media.giphy.com/media/hPyONzUYJhLZS/giphy.gif" style="width:232px;height:223px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(28.1):GOTO:cats8
+	Q(29.1):GOTO:cats8
 A: No
-	Q(28.2):Bye then. GOTO:bye
+	Q(29.2):Bye then. GOTO:bye
 Q(cats8): <img src="https://media.giphy.com/media/Endx3eMpqmpZ6/giphy.gif" style="width:232px;height:142px;"/> <br><br> I know, those are puppies, but they're sooo cute.
 <br><br> Do you need more?
 A: Yes
-	Q(29.1):GOTO:cats9
+	Q(30.1):GOTO:cats9
 A: No
-	Q(29.2):Bye then. GOTO:bye
+	Q(30.2):Bye then. GOTO:bye
 Q(cats9): <img src="https://media.giphy.com/media/5scVaYq4hKA7u/giphy.gif" style="width:232px;height:130px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(30.1):GOTO:cats10
+	Q(31.1):GOTO:cats10
 A: No
-	Q(30.2):Bye then. GOTO:bye
+	Q(31.2):Bye then. GOTO:bye
 Q(cats10): <img src="https://media.giphy.com/media/t7MWRoExDRF72/giphy.gif" style="width:232px;height:207px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(31.1):GOTO:cats
+	Q(32.1):GOTO:cats
 A: No
-	Q(31.2):Bye then. GOTO:bye
+	Q(32.2):Bye then. GOTO:bye
 
 
 Q(bye): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>
