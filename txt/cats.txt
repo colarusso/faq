@@ -43,62 +43,63 @@ body{
 Q(1): <img src="https://media.giphy.com/media/Ov5NiLVXT8JEc/giphy.gif" style="width:232px;height:130px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(1.1):GOTO:2
+	Q(1.1): <img src="https://media.giphy.com/media/gl8ymnpv4Sqha/giphy.gif" style="width:232px;height:195px;"/>
+<br><br> Do you need more?
+	A: Yes
+		Q(1.1.1):GOTO:3
+	A: No
+		Q(1.1.2):Bye then. GOTO:end
+
+
 A: No
 	Q(1.2):Bye then. GOTO:end
-Q(2): <img src="https://media.giphy.com/media/gl8ymnpv4Sqha/giphy.gif" style="width:232px;height:195px;"/>
+Q(2): <img src="https://media.giphy.com/media/kvrvnB158J4fm/giphy.gif" style="width:232px;height:194px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(2.1):GOTO:3
+	Q(2.1):GOTO:4
 A: No
 	Q(2.2):Bye then. GOTO:end
-Q(3): <img src="https://media.giphy.com/media/kvrvnB158J4fm/giphy.gif" style="width:232px;height:194px;"/>
+Q(3): <img src="https://media.giphy.com/media/xBAreNGk5DapO/giphy.gif" style="width:232px;height:188px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(3.1):GOTO:4
+	Q(3.1):GOTO:5
 A: No
 	Q(3.2):Bye then. GOTO:end
-Q(4): <img src="https://media.giphy.com/media/xBAreNGk5DapO/giphy.gif" style="width:232px;height:188px;"/>
+Q(4): <img src="https://media.giphy.com/media/BLCHvwl9C5j1u/giphy.gif" style="width:232px;height:232px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(4.1):GOTO:5
+	Q(4.1):GOTO:6
 A: No
 	Q(4.2):Bye then. GOTO:end
-Q(5): <img src="https://media.giphy.com/media/BLCHvwl9C5j1u/giphy.gif" style="width:232px;height:232px;"/>
+Q(5): <img src="https://media.giphy.com/media/10dU7AN7xsi1I4/giphy.gif" style="width:232px;height:323px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(5.1):GOTO:6
+	Q(5.1):GOTO:7
 A: No
 	Q(5.2):Bye then. GOTO:end
-Q(6): <img src="https://media.giphy.com/media/10dU7AN7xsi1I4/giphy.gif" style="width:232px;height:323px;"/>
+Q(6): <img src="https://media.giphy.com/media/hPyONzUYJhLZS/giphy.gif" style="width:232px;height:223px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(6.1):GOTO:7
+	Q(6.1):GOTO:8
 A: No
 	Q(6.2):Bye then. GOTO:end
-Q(7): <img src="https://media.giphy.com/media/hPyONzUYJhLZS/giphy.gif" style="width:232px;height:223px;"/>
+Q(7): <img src="https://media.giphy.com/media/Endx3eMpqmpZ6/giphy.gif" style="width:232px;height:142px;"/> <br><br> I know, those are puppies, but they're sooo cute.
 <br><br> Do you need more?
 A: Yes
-	Q(7.1):GOTO:8
+	Q(7.1):GOTO:9
 A: No
 	Q(7.2):Bye then. GOTO:end
-Q(8): <img src="https://media.giphy.com/media/Endx3eMpqmpZ6/giphy.gif" style="width:232px;height:142px;"/> <br><br> I know, those are puppies, but they're sooo cute.
+Q(8): <img src="https://media.giphy.com/media/5scVaYq4hKA7u/giphy.gif" style="width:232px;height:130px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(8.1):GOTO:9
+	Q(8.1):GOTO:end
 A: No
 	Q(8.2):Bye then. GOTO:end
-Q(9): <img src="https://media.giphy.com/media/5scVaYq4hKA7u/giphy.gif" style="width:232px;height:130px;"/>
+Q(9): <img src="https://media.giphy.com/media/t7MWRoExDRF72/giphy.gif" style="width:232px;height:207px;"/>
 <br><br> Do you need more?
 A: Yes
-	Q(9.1):GOTO:10
+	Q(9.1):GOTO:1
 A: No
 	Q(9.2):Bye then. GOTO:end
-Q(10): <img src="https://media.giphy.com/media/t7MWRoExDRF72/giphy.gif" style="width:232px;height:207px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(10.1):GOTO:1
-A: No
-	Q(10.2):Bye then. GOTO:end
 
 Q(end): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>
