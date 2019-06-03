@@ -2,6 +2,43 @@ Title: Colarusso's FAQ "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
 Description: An interactive FAQ written by Colarusso. Last updating 2019-05-29 3:57pm
 Before:
+<script>
+function loadQnA(url_point,button) {
+  // Note: this only works with A tags, not X tags. 
+  // The QnA you are loading must be on the same domain as the QnA calling it.
+
+  $.ajax({ url: url_point, success: function(data) { 
+
+    var mydata = $(data).find('div[id=ondeck]');
+    var placeholder = Date.now();
+    mydata  =  mydata.html(mydata.html().replace(/GOTO:/g,"GOTO:"+placeholder+"."));
+    console.log(mydata.html())
+    mydate = mydata.html(mydata.html().replace(/ (id|name)="Q-/gi, ' $1="Q-'+placeholder+'.'));
+    mydate = mydata.html(mydata.html().replace(/ (id|name)="A-(target-|href-|)/gi, ' $1="A-$2'+placeholder+'.'));
+    mydate = mydata.html(mydata.html().replace(/ (id|name)="X-/gi, ' $1="X-'+placeholder+'.'));
+    mydate = mydata.html(mydata.html().replace(/ (id|name)="Xi-/gi, ' $1="Xi-'+placeholder+'.'));
+    mydate = mydata.html(mydata.html().replace(/var QVnames =/gi, 'QVnames_placeholder ='));
+    
+    mydate = mydata.html(mydata.html() + "<div id='A-"+placeholder+".1' name='A-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
+    mydate = mydata.html(mydata.html() + "<div id='X-"+placeholder+".1' name='X-"+placeholder+".1' style='display:none;'>"+$($.parseHTML(button)).html()+"</div>");
+
+    var QVNames_tmp = QVnames;
+    $('#ondeck').html($('#ondeck').html()+mydate.html());
+    QVnames = QVNames_tmp     
+    for (var i in QVnames_placeholder) {
+      //check to see if [][1] is a custom name, if so leave it alone
+      if (QVnames_placeholder[i][1].match(/[a-z]/i)) {
+        QVnames.push([placeholder+'.'+QVnames_placeholder[i][0],QVnames_placeholder[i][1]])
+      } else {
+        QVnames.push([placeholder+'.'+QVnames_placeholder[i][0],placeholder+'.'+QVnames_placeholder[i][1]])
+      }
+    }
+
+    answerQ(placeholder+.1);
+
+  } });
+}
+</script>
 <style>
 body{
     background:white;
@@ -115,27 +152,23 @@ A: Coding the Law
 		Q(4.1.1): You can find the first class assignment on our schedule <a href="" target="_blank">here</a>.
 		A: Thanks, bye
 			Q(4.1.1.1):GOTO:bye
-		A: Can I have cat videos?
-			Q(4.1.1.2):GOTO:cats
+		A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 	A: Help
 		Q(4.1.2): After our first class, I'll start to provide relevant interactive aids here (e.g., debugger guides etc.). 
 		A: Thanks, and bye
 			Q(4.1.2.1):GOTO:bye
-		A: Can I have cat videos?
-			Q(4.1.2.2):GOTO:cats
+		A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 A: Clinical Fellows
 	Q(4.2): After our first session, I'll start to provide relevant interactive aids here (e.g., debugger guides etc.). 
 	A: Thanks, and bye
 		Q(4.2.1):GOTO:bye
-	A: Can I have cat videos?
-		Q(4.2.2):GOTO:cats
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: LIT Lab
 	Q(4.3): After our first session, I'll start to provide relevant interactive aids here (e.g., debugger guides etc.). 
 	A: Thanks, and bye
 		Q(4.3.1):GOTO:bye
-	A: Can I have cat videos?
-		Q(4.3.2):GOTO:cats
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 Q(5):<!-- 
 ################################
@@ -195,15 +228,13 @@ Q(11):<!--
 Q(fac_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>Occasionally we'll work on projects for faculty/staff. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time to talk.
 A: Thanks, bye
 	Q(12.1):GOTO:bye
-A: Can I have cat videos?
-	Q(12.2):GOTO:cats
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(ex_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>We serve both non-profit and for-profit clients, with the latter subsidizing the former, when appropriate. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/call" target="_blank">click through here</a> and book a time to talk.
 A: Thanks, bye
 	Q(13.1):GOTO:bye
-A: Can I have cat videos?
-	Q(13.2):GOTO:cats
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(DMed): Did you try sending me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>? We have GIFs turned on.
@@ -221,8 +252,7 @@ A: No, I need help with Slack
 	Q(14.2): If you haven't already, you can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile" target="_blank">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DM</a> @Colarusso. Ask him to add you to your class's private channel.
 	A: Thanks, bye
 		Q(14.2.1):GOTO:bye
-	A: Can I have cat videos?
-		Q(14.2.2):GOTO:cats
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: Yes
 	Q(14.3):If I haven't replied yet, don't worry, I will soon. Either way... GOTO:aboutwhat
 
@@ -230,8 +260,7 @@ A: Yes
 Q(collab): Cool. I love collaboration. Shoot me an email at D Colarusso at Suffolk dot EDU describing what you're thinking. FWIW, here's <a href="https://osf.io/fya6w/" target="_blank">some of my work</a>.
 A: Thanks, bye
 	Q(15.1):GOTO:bye
-A: Can I have cat videos?
-	Q(15.2):GOTO:cats
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>If you aren't a student and you take one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif" style="width:270px;height:145px;">
@@ -241,8 +270,7 @@ A: I'm not a student, but I want to talk.
 		Q(16.1.1):GOTO:fac_meet
 	A: No
 		Q(16.1.2):GOTO:ex_meet
-A: Can I have cat videos?
-	Q(16.2):GOTO:cats
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: Bye
 	Q(16.3):GOTO:bye
 
@@ -250,8 +278,7 @@ A: Bye
 Q(background): We'll it's pretty eclectic. You should probably just check out my eponymous website—<a href="http://davidcolarusso.com/" target="_blank">David Colarusso</a>.
 A: Thanks, bye
 	Q(17.1):GOTO:bye
-A: Can I have cat videos?
-	Q(17.2):GOTO:cats
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(speaker): The first things you should know is that I don't sit on manels (all-male panels). If you need names, I suggest checking out these lists: <a href="https://docs.google.com/spreadsheets/d/1EkEUJFrk4QHh1pHsjdxmftxiYRtM-01HibycpNMe_ik/edit?usp=sharing" target="_blank">Diverse legal tech: POC and Underrepresented People of Legal Tech and Innovation</a> (crowd-sourced) & <a href="https://www.americanbar.org/groups/departments_offices/legal_technology_resources/resources/WomenofLegalTech/" target="_blank">Women of Legal Tech</a> (from the ABA's Legal Technology Resource Center).
@@ -259,10 +286,8 @@ A: Of course; that makes sense
 	Q(18.1): If it's for a nonprofit (e.g., legal aid or law school group) in Boston, and I can make it home to read my kids' bedtime stories, I'm inclined to say yes. If travel is involved, I'll probably ask for something to help defer the costs, and if it's for a for-profit, expect a discussion re. speaker's fees.<br><br>You can find some of my old talks <a href="https://suffolklitlab.org/talks/" target="_blank">here</a>. Just email D Colarusso at Suffolk dot EDU, and we'll see if it's a good match.
 	A: Thanks, bye
 		Q(18.1.1):GOTO:bye
-	A: Can I have cat videos?
-		Q(18.1.2):GOTO:cats
-A: Can I have cat videos?
-	Q(18.2):GOTO:cats
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: Bye
 	Q(18.3):GOTO:bye
 
@@ -270,8 +295,7 @@ A: Bye
 Q(fac_meet):Just <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time that works for you.
 A: Thanks, bye
 	Q(19.1):GOTO:bye
-A: Can I have cat videos?
-	Q(19.2):GOTO:cats
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(ex_meet): <img src="https://media.giphy.com/media/4dAqzSvxV15Is/source.gif" style="width:232px;height:131px;"/><br><br> FWIW, many of my pre-set options lead to a link that will let you book a meeting, but they also include info that might make the need for a call moot. 
@@ -285,8 +309,7 @@ A: Dude, I just want an email!
 	Q(20.4): <img src="https://media.giphy.com/media/ktCzb8Rm8aoow/giphy.gif" style="width:232px;height:131px;"><br><br>And I'm just like a flowchart. Try D Colarusso at Suffolk dot EDU, but remember, the above branches might have some valuable info. 
 	A: Thanks, bye
 		Q(20.4.1):GOTO:bye
-	A: Can I have cat videos?
-		Q(20.4.2):GOTO:cats
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(call): Are you selling something? 
@@ -294,14 +317,12 @@ A: Yes
 	Q(21.1):<img src="https://media.giphy.com/media/3o6wrFfvR3vnV71iG4/giphy.gif" style="width:232px;height:175px;"/><br><br> I'm really not interested, and even if I were, I don't have the budget. 
 	A: Thank you, and good bye.
 		Q(21.1.1):GOTO:bye
-	A: Can I have cat videos?
-		Q(21.1.2):GOTO:cats
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: No
 	Q(notselling):You can find a time for and book a call by following <A href="https://calendly.com/dcolarusso/call" target="_blank">this link</a>. 
 	A: Thanks, bye
 		Q(21.2.1):GOTO:bye
-	A: Can I have cat videos?
-		Q(21.2.2):GOTO:cats
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(RAs): Yes. Most semesters (including summer session) I hire paid research assistants. Are you a Suffolk University student (law, undergrad, or grad)?
@@ -323,68 +344,6 @@ A: No
 		Q(22.3.1):Go Rams! GOTO:faculty
 	A: No
 		Q(22.3.2):GOTO:external
-
-
-Q(cats): <img src="https://media.giphy.com/media/Ov5NiLVXT8JEc/giphy.gif" style="width:232px;height:130px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(23.1):GOTO:cats2
-A: No
-	Q(23.2):Bye then. GOTO:bye
-Q(cats2): <img src="https://media.giphy.com/media/gl8ymnpv4Sqha/giphy.gif" style="width:232px;height:195px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(24.1):GOTO:cats3
-A: No
-	Q(24.2):Bye then. GOTO:bye
-Q(cats3): <img src="https://media.giphy.com/media/kvrvnB158J4fm/giphy.gif" style="width:232px;height:194px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(25.1):GOTO:cats4
-A: No
-	Q(25.2):Bye then. GOTO:bye
-Q(cats4): <img src="https://media.giphy.com/media/xBAreNGk5DapO/giphy.gif" style="width:232px;height:188px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(26.1):GOTO:cats5
-A: No
-	Q(26.2):Bye then. GOTO:bye
-Q(cats5): <img src="https://media.giphy.com/media/BLCHvwl9C5j1u/giphy.gif" style="width:232px;height:232px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(27.1):GOTO:cats6
-A: No
-	Q(27.2):Bye then. GOTO:bye
-Q(cats6): <img src="https://media.giphy.com/media/10dU7AN7xsi1I4/giphy.gif" style="width:232px;height:323px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(28.1):GOTO:cats7
-A: No
-	Q(28.2):Bye then. GOTO:bye
-Q(cats7): <img src="https://media.giphy.com/media/hPyONzUYJhLZS/giphy.gif" style="width:232px;height:223px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(29.1):GOTO:cats8
-A: No
-	Q(29.2):Bye then. GOTO:bye
-Q(cats8): <img src="https://media.giphy.com/media/Endx3eMpqmpZ6/giphy.gif" style="width:232px;height:142px;"/> <br><br> I know, those are puppies, but they're sooo cute.
-<br><br> Do you need more?
-A: Yes
-	Q(30.1):GOTO:cats9
-A: No
-	Q(30.2):Bye then. GOTO:bye
-Q(cats9): <img src="https://media.giphy.com/media/5scVaYq4hKA7u/giphy.gif" style="width:232px;height:130px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(31.1):GOTO:cats10
-A: No
-	Q(31.2):Bye then. GOTO:bye
-Q(cats10): <img src="https://media.giphy.com/media/t7MWRoExDRF72/giphy.gif" style="width:232px;height:207px;"/>
-<br><br> Do you need more?
-A: Yes
-	Q(32.1):GOTO:cats
-A: No
-	Q(32.2):Bye then. GOTO:bye
 
 
 Q(bye): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>
