@@ -63,7 +63,7 @@ A: No
 		Q(faculty): What would you like to do? 
 		A: Meet/talk
 			Q(1.2.2.1):GOTO:fac_meet
-		A: Learn about a classes you teach
+		A: Learn about a class you teach
 			Q(1.2.2.2):GOTO:classes
 		A: "Hire"/learn about the LIT Lab
 			Q(1.2.2.3):GOTO:fac_hire
