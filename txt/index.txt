@@ -1,15 +1,15 @@
 Title: Colarusso's FAQ "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive FAQ written by Colarusso. Last updating 2019-06-03 2:16pm
+Description: An interactive FAQ written by Colarusso. Last updating 2019-06-03 2:56pm
 After:<script src="https://colarusso.github.io/faq/js_bin/scripts.js"></script>
 Before:
 <style>
 body{
     background:white;
-    background-image: url("https://suffolklitlab.github.io/images/babbage.jpg");
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
     background-color: #fff;
     background-repeat: repeat-x;
-    background-position: center -120px ;
+    background-position: center -40px ;
 }
 #conversation {
     max-width:900px;
@@ -25,7 +25,7 @@ body{
     background-size: 110px;
     background-position: center 0px;
     background-repeat: no-repeat;
-    background-image: url('https://pbs.twimg.com/profile_images/943943491662397440/wzEPRO90_400x400.jpg');
+    background-image: url('https://colarusso.github.io/faq/images/colarusso.jpg');
 }
 .profile_vid {
     float:none;
@@ -190,7 +190,7 @@ A: Thanks, bye
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
-Q(DMed): Did you try sending me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>? We have GIFs turned on.<br><br><img src="https://media.giphy.com/media/bcKmIWkUMCjVm/giphy.gif" style="width:232px;height:169px;">
+Q(DMed): Did you try sending me a <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">direct message</a> over on <a href="http://suffolklitlab.slack.com/" target="_blank">our Slack team</a>? We have GIFs turned on.<br><br><img src="https://colarusso.github.io/faq/images/hello.webp" style="width:232px;height:169px;">
 A: No, I'd like to try the FAQ first
 	Q(aboutwhat): Is this about a specific problem set, reading, or <a href="https://www.atlassian.com/agile/scrum/sprints" target="_blank">sprint</a>?
 	A: Yes
@@ -216,7 +216,7 @@ A: Thanks, bye
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
-Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>If you aren't a student and you take one of their slots...<br><br><img src="https://media2.giphy.com/media/Oox7ww3fYn648/giphy.gif" style="width:270px;height:145px;">
+Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>If you aren't a student and you take one of their slots...<br><br><img src="https://colarusso.github.io/faq/images/put_out.gif" style="width:270px;height:145px;">
 A: I'm not a student, but I want to talk.
 	Q(13.1): Suffolk faculty/staff?
 	A: Yes
@@ -251,15 +251,15 @@ A: Thanks, bye
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
-Q(ex_meet): <img src="https://media.giphy.com/media/4dAqzSvxV15Is/source.gif" style="width:232px;height:131px;"/><br><br> FWIW, many of my pre-set options lead to a link that will let you book a meeting, but they also include info that might make the need for a call moot. 
+Q(ex_meet): <img src="https://colarusso.github.io/faq/images/tread_lightly.gif" style="width:232px;height:131px;"/><br><br> FWIW, many of my pre-set options lead to a link that will let you book a meeting, but they also include info that might make the need for a call moot. 
 A: Can I see those options?
 	Q(17.1): Sure. GOTO:external
 A: None of the options were relevant
 	Q(17.2): Fair enough. ;) GOTO:call
 A: I really hate "phone" trees
-	Q(17.3):<img src="https://media.giphy.com/media/2UIcmK4pn7rYNLRboG/giphy.gif" style="width:232px;height:232px;"><br><br>I hear you. Sorry for the Schrödinger GIF, but I'm just a flowchart trying to get you what you need. GOTO:call
+	Q(17.3):<img src="https://colarusso.github.io/faq/images/there_there.gif" style="width:232px;height:232px;"><br><br>I hear you. Sorry for the Schrödinger GIF, but I'm just a flowchart trying to get you what you need. GOTO:call
 A: Dude, I just want an email!
-	Q(17.4): <img src="https://media.giphy.com/media/ktCzb8Rm8aoow/giphy.gif" style="width:232px;height:131px;"><br><br>And I'm just like a flowchart. Try D Colarusso at Suffolk dot EDU, but remember, the above branches might have some valuable info. 
+	Q(17.4): <img src="https://colarusso.github.io/faq/images/dude.gif" style="width:232px;height:131px;"><br><br>And I'm just like a flowchart. Try D Colarusso at Suffolk dot EDU, but remember, the above branches might have some valuable info. 
 	A: Thanks, bye
 		Q(17.4.1):GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
@@ -267,7 +267,7 @@ A: Dude, I just want an email!
 
 Q(call): Are you selling something? 
 A: Yes
-	Q(18.1):<img src="https://media.giphy.com/media/3o6wrFfvR3vnV71iG4/giphy.gif" style="width:232px;height:175px;"/><br><br> I'm really not interested, and even if I were, I don't have the budget. 
+	Q(18.1):<img src="https://colarusso.github.io/faq/images/no_solicitors.webp" style="width:232px;height:175px;"/><br><br> I'm really not interested, and even if I were, I don't have the budget. 
 	A: Thank you, and good bye.
 		Q(18.1.1):GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
@@ -284,7 +284,7 @@ A: Yes
 	A: Yes
 		Q(19.1.1):GOTO:currentjobs
 	A: No
-		Q(19.1.2):<img src="https://media.giphy.com/media/o6KYXl09rnmOQ/giphy.gif" style="width:232px;height:131px;"/><br><br> Okay... it's probably not a good fit. Let's try something else. GOTO:no_RA_student
+		Q(19.1.2):<img src="https://colarusso.github.io/faq/images/um.gif" style="width:232px;height:131px;"/><br><br> Okay... it's probably not a good fit. Let's try something else. GOTO:no_RA_student
 A: Yes, but I need credits, not cash
 	Q(19.2): If you're interested in credits, I suggest checking out my classes. E.g., the work of Lab students is often similar to that of my RAs. 
 	A: More about classes
@@ -299,4 +299,4 @@ A: No
 		Q(19.3.2):GOTO:external
 
 
-Q(bye): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>
+Q(bye): <img src="https://colarusso.github.io/faq/images/bye.gif" style="width:232px;height:232px;"/>
