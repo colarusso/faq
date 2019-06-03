@@ -38,7 +38,7 @@ body{
 </style>
 <div id="icon"></div>
 <h2 align=center style="margin:5px 0 5px;">This Page is a QnA Stub</h2>
-<p>This QnA is part of a set, and is properly viewed as such. See <a href="https://colarusso.github.io/faq/" target="_top">Colaruss's FAQ "Bot"</a>.</p>
+<p>This QnA is part of a set and is properly viewed as such. See <a href="https://colarusso.github.io/faq/" target="_top">Colaruss's FAQ "Bot"</a>.</p>
 
 Q(cats): <img src="https://media.giphy.com/media/Ov5NiLVXT8JEc/giphy.gif" style="width:232px;height:130px;"/>
 <br><br> Do you need more?
