@@ -1,6 +1,6 @@
 Title: Colarusso's FAQ "Bot"
 Author: <a href="https://twitter.com/Colarusso" target="_blank">David Colarusso</a>
-Description: An interactive FAQ written by Colarusso. Last updating 2019-06-03 3:19pm
+Description: An interactive FAQ written by Colarusso. This module was last updating on 2019-06-04 8:42am. For component modules, check out the <a href="https://github.com/colarusso/faq" target="_blank">FAQ GitHub repo</a>.
 After:<script src="https://colarusso.github.io/faq/js_bin/scripts.js"></script>
 Before:
 <style>
@@ -144,7 +144,7 @@ Q(5):<!--
 -->
 
 
-Q(currentjobs): Right now, I'm looking for folks able to work about 7 hours a week during the Fall 2019 semester. There are spots for folks to do traditional legal research, issue spotting, or light engineering work. You'd be working on <a href="https://lawyerist.com/learned-hands-launch/" target="_blank">this project</a>. Interested? 
+Q(currentjobs): I'm looking for folks able to work about 7 hours a week during the Fall 2019 semester. There are spots for folks to do traditional legal research, issue spotting, or light engineering work. You'd be working on <a href="https://lawyerist.com/learned-hands-launch/" target="_blank">this project</a>. Interested? 
 A: Yes
 	Q(6.1): Shoot an email cover letter with your resume to D Colarusso at Suffolk dot EDU, subject line, "LIT Lab RA Position."<br><br> Let's see if there's anything else I can help with. GOTO:no_RA_student
 A: No
@@ -200,7 +200,17 @@ A: No, I'd like to try the FAQ first
 		A: Yes
 			Q(11.1.2.1):GOTO:classes
 		A: No
-			Q(11.1.2.2):GOTO:student
+			Q(11.1.2.2):What would you like to do? 
+			A: Have a meeting/call
+				Q(11.1.2.2.1):GOTO:officehours
+			A: Learn about paid research openings 
+				Q(11.1.2.2.2):GOTO:paid
+			A: Learn about your background
+				Q(11.1.2.2.3):GOTO:background
+			A: Book you as a speaker
+				Q(11.1.2.2.4):GOTO:speaker
+
+
 A: No, I need help with Slack
 	Q(11.2): If you haven't already, you can join by following <a href="https://suffolklitlab.org/slack/" target="_blank">this link</a>. Once you have, <a href="https://get.slack.help/hc/en-us/articles/204092246-Edit-your-profile" target="_blank">fill out your profile</a>, and <a href="https://get.slack.help/hc/en-us/articles/212281468-Direct-messages-and-group-DMs" target="_blank">DM</a> @Colarusso. Ask him to add you to your class's private channel.
 	A: Thanks, bye
@@ -217,7 +227,7 @@ A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML
 
 
 Q(officehours): Just <a href="https://calendly.com/dcolarusso/office-hours" target="_blank">click through here</a> and book a time that works for you.<br><br>If you aren't a student and you take one of their slots...<br><br><img src="https://colarusso.github.io/faq/images/put_out.gif" style="width:270px;height:145px;">
-A: I'm not a student, but I want to talk.
+A: Not a student, but I want to talk
 	Q(13.1): Suffolk faculty/staff?
 	A: Yes
 		Q(13.1.1):GOTO:fac_meet

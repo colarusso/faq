@@ -6,10 +6,10 @@ Before:
 <style>
 body{
     background:white;
-    background-image: url("https://suffolklitlab.github.io/images/babbage.jpg");
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
     background-color: #fff;
     background-repeat: repeat-x;
-    background-position: center -120px ;
+    background-position: center -40px ;
 }
 #conversation {
     max-width:900px;
@@ -39,66 +39,166 @@ body{
 </style>
 <div id="icon"></div>
 <h2 align=center style="margin:5px 0 5px;">Coding The Law Syllabus "Bot"</h2>
-<p>This is an interactive syllabus for Suffolk Law's project-based <a href="https://www.codingthelaw.org" target="_blank">Coding The Law</a> (2 experiential credits; Fall 2019, Mondays from 4-5:50pm in Sargent Hall, Room 325). To get homework help, book office hours, and the like, visit <a href="https://colarusso.github.io/faq/" target="_blank">the FAQ "Bot."</a></p>
+<p>This is an interactive syllabus for Suffolk Law's project-based <a href="https://www.codingthelaw.org" target="_blank">Coding The Law</a> (2 experiential credits; Fall 2019, Mondays from 4-5:50pm in Sargent Hall, Room 325). To get homework help, book office hours, and the like, visit <a href="https://colarusso.github.io/faq/" target="_blank">the FAQ "Bot."</a> Also, here's <a href="https://docs.google.com/document/d/1_KTzKR4t_ReKF_UovfMCYpfKMBELBRrZztqQBPgnYSQ/edit?usp=sharing" target="_blank">the static copy</a>.</p>
 
 Q(1): What would you like to know?
-A: What student learn
 A: Who should take this class
-	Q(1.2):GOTO:comfort
+	Q(1.1):GOTO:problems
+A: What students learn
+	Q(learn): This course aims to place the use of new technologies (specifically the most hyped e.g., “AI” and data science) in the broader context of law and society.
+	<br><br>Upon successful completion of this course, students will:<br> <br>
+	Possess an introductory understanding of design thinking and its application to the practice of law, esp. in the development of legal tech.<br> <br>
+	Gain a high-level familiarity with the realm of the possible in legal tech, including a general understanding of data science and machine learning/narrow AI.<br> <br>
+	Understand the dangers and roots of algorithmic bias.<br><br>
+	And more to the point, they'll learn by doing. It is after all a project-based course. 
+	A: What does the work look like?
+		Q(1.2.1):GOTO:work
+	A: What are the course policies?
+		Q(1.2.2):GOTO:policies
 A: What the work looks like
+	Q(work): We usually have weekly problem sets (mini coding projects), and there is a <a href="https://docs.google.com/document/d/18gXLTOgY0x9loKwQuub6BzgVbnyyYkwmbHJg1FBKJZc/edit?usp=sharing" target="_blank">final project</a>. How you engage with these depends in part on your background. Are you a non-coder/newbie or coder?
+	A: Newbie/Non-coder
+		Q(1.3.1): This course is not designed to make you into a production-ready coder. You will likely produce a project or two worthy of public release, but this will come largely from following directions and a lot of support. This is analogous to how most people can “bake” because they can follow a recipe. True bakers, however, know enough to improvise. They can innovate. For the most part, you will be following recipes.<br><br> The hope is that after this class you will better appreciate software creation as a skill, not some dark magic, and that this will help prepare you to partner with technologists to create just and useful solutions and ask the right questions. It should help acquaint you with the realm of the possible and provide you with a lay of the land. GOTO:studentwork
+	A: Coder
+		Q(1.3.2): You will be free, within certain constraints and after pre-approval, to deviate from our standard recipes and produce projects that utilize your existing skill set. But as we have made clear above, this course should primarily help pair your technical skill with the critical eye of a legal practitioner. GOTO:studentwork
+A: If there's a textbook
+	Q(wmd): Students need to have a copy of Cathy O'Neil’s <a href="https://books.google.com/books/about/Weapons_of_Math_Destruction.html?id=5XqRDAEACAAJ" target="_blank">Weapons of Math Destruction</a>. 
+	<br><br>Would you like to browse course policies?
+	A: Yes
+		Q(1.4.1):GOTO:policies
+	A: No 
+		Q(1.4.2): Thanks for visiting. Remember you can always "Go back one" or "start over." GOTO:bye
 A: Course policies
+	Q(policies): The authoritative and complete version of course policies can be found <a href="https://docs.google.com/document/d/1_KTzKR4t_ReKF_UovfMCYpfKMBELBRrZztqQBPgnYSQ/edit?usp=sharing" target="_blank">here</a>. That being said, here are some highlights.
+	A: Grading
+		Q(grading): Your grade will be based primarily on a final project. See <a href="https://docs.google.com/document/d/18gXLTOgY0x9loKwQuub6BzgVbnyyYkwmbHJg1FBKJZc/edit?usp=sharing" target="_blank">Final Project milestones & rubric</a>. Your performance on weekly problem sets and reading questions will be used as a multiplier such that your final grade will be either more or less than that of your final project. You can find the exact details <a href="https://docs.google.com/document/d/1_KTzKR4t_ReKF_UovfMCYpfKMBELBRrZztqQBPgnYSQ/edit#heading=h.u9oiblabp1xj" target="_blank">here</a>.
+		A: What about late work?
+			Q(1.5.1.1):GOTO:latework
+		A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
+	A: Late work
+		Q(latework): I am open to making adjustments to specific due dates for extenuating circumstances on a case by case basis as long as requests are made prior to the due date with adequate lead time (e.g., not the day something is due). If you are completing work late, you must let me know as I might not notice otherwise, and there are specific limits on how may assignments you can turn in late. See <a href="https://docs.google.com/document/d/1_KTzKR4t_ReKF_UovfMCYpfKMBELBRrZztqQBPgnYSQ/edit#heading=h.u9oiblabp1xj" target="_blank">Grading/Evaluation</a> for more. 
+		A: How are grade calculated?
+			Q(1.5.2.1):GOTO:grading
+		A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
+		
 A: Do students build "bots" like this?
-	Q(1.5):GOTO:qna
+	Q(1.6):GOTO:qna
 
 
-Q(qna): Yes. It's an open source tool called <a href="https://www.qnamarkup.org" target="_blank">QnA Markup</a>, and it's actually one of three open source tools we'll be teaching at our free <a href="https://suffolklitlab.org/LITCon/2019/hack/" target="_blank">skills building session</a> the weekend before the conference. Would you like to see a 10 min video primer?
-A: Sure.
-	Q(2.1):<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/RVhzQ1JVi3s?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>
-	<br><br>Do you want more?
-	A: Yes.
-		Q(2.1.1):GOTO:whatabout
-	A: No.
-		Q(2.1.2):GOTO:whatabout
-A: No thanks.
-	Q(2.2):GOTO:whatabout
-A: Why would I use something like this?
-	Q(2.3): I don't know, lots of reason. You could help direct folks to resources based on their answers or collect info to automate documents... <br><br> <img src="https://media.giphy.com/media/3o6ozovtBb4wLpIVZ6/giphy.gif" style="width:232px;height:130px;"/> GOTO:whatabout
+Q(studentwork): You can see examples of past student work linked off the <a href="http://www.codingthelaw.org/past/" target="_blank">course's website</a>. Do you want to view specific assignments? 
+A: Yes
+	Q(2.1): The you should take a look at our <a href="https://docs.google.com/document/d/1_pjMS1TgK4g6n4X5BuNdzVPySMVnyzD3TUUC2xFuyf0/edit?usp=sharing" target="_blank">Reading and Work Schedule</a>. GOTO:afterstudentwork
+A: No
+	Q(afterstudentwork): Would you like to see our book?
+	A: Yes
+		Q(2.2.1):GOTO:wmd
+	A: No 
+		Q(2.2.2): Thanks for visiting. Remember you can always "Go back one" or "start over." GOTO:bye
+
+Q(menu_minus): What would you like to know next?
+A: Who should take this class
+	Q(3.1):GOTO:problems
+A: What students learn
+	Q(3.2):GOTO:learn
+A: What the work looks like
+	Q(3.3):GOTO:work
+A: If there's a textbook
+	Q(3.4):GOTO:wmd
+A: Course policies
+	Q(3.5):GOTO:policies
 
 
-Q(whatabout): Well, if you're interested in attending some free sessions on learning how to use QnA along with <a href="https://docassemble.org/" target="_blank">Docassemble</a> and <a href="https://www.a2jauthor.org/" target="_blank">A2J Author</a>, we'll be offering some on April 6th @ noon. <br><br>
-Back to LITCon proper. Can you make it to Boston on April 8th, 2019?
+Q(problems): Do you think there are things about the way lawyers (or the justice system) work that could use improvement?
+A: Yes
+	Q(goodnews): Then you'd fit right in. We explore how tech can help improve things for practitioners and the justice system. <br><br>That being said, what's your comfort level with tech?
+	A: I can use Word/Wordperfect.
+		Q(4.1.1): <img src="https://media.giphy.com/media/1S3vm6ISM2gDu/giphy.gif" style="width:132px;height:116px;"/> GOTO:everyone
+	A: Give me a command line.
+		Q(4.1.2): <img src="https://media.giphy.com/media/gPkWsM6X5xLVe/giphy.gif" style="width:232px;height:174px;"/>
+		A: I'd love to play a game.
+			Q(4.1.2.1):<img src="https://jasoneppink.com/wp-content/gallery/the-reaction-gif-moving-image-as-gesture/kermit.gif" style="width:232px;height:167px;"> GOTO:wargames
+		A: Let's learn more about the course.
+			Q(4.1.2.2):GOTO:everyone
+	A: What's a command line?
+		Q(4.1.3): <img src="https://media.giphy.com/media/NRa7dRkMlVZRE5HUU4/giphy.gif" style="width:232px;height:130px;"/> <br><br> It's that text interface you see computer folks using. Anyhow, it's not important. GOTO:everyone
+
+A: No
+	Q(4.2): <img src="https://www.reactiongifs.com/r/2013/06/I-dont-believe-you.gif" style="width:232px;height:174px;">GOTO:mproblems
+
+
+Q(mproblems): Do you think there are things about the way lawyers (or the justice system) work that could use improvement?
 A: Yes.
+	Q(5.1):GOTO:goodnews
 A: No.
+	Q(5.2): <img src="https://media.giphy.com/media/qaYxWacSp8Jfq/giphy.gif" style="width:232px;height:217px;">GOTO:mmproblems
+
+
+
+Q(mmproblems): <i>Do you think there are things about the way lawyers (or the justice system) work that could use improvement?</i>
+A: Yes
+	Q(6.1):GOTO:goodnews
+A: No
+	Q(6.2): <img src="https://media.giphy.com/media/12FfNKPlSR5k2c/giphy.gif" style="width:232px;height:193px;">GOTO:mmmproblems
+
+
+Q(mmmproblems): <i><b>Do you think there things about the way lawyers (or the justice system) work that could use improvement?</b></i>
+A: Yes
+	Q(7.1):GOTO:goodnews
+A: No
+	Q(notforyou):<img src="https://media.giphy.com/media/o6KYXl09rnmOQ/giphy.gif" style="width:232px;height:131px;"/><br><br> Okay... this class might not be for you.
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat pictures now?
+	A: Bye
+		Q(7.2.2):GOTO:bye
+
+Q(everyone): Coding the Law if for non-programmers and coders a like. It teaches students how to think about thinking machines in the law by having them build their own. It explores the technical, legal, and ethical dimensions behind the use of computer algorithms by legal practitioners and the justice system. What next?
+A: What do students learn?
+	Q(8.1):GOTO:learn
+A: What does the work looks like?
+	Q(8.2):GOTO:work
+A: What is the course text?
+	Q(8.3):GOTO:wmd
+A: What are the course policies?
+	Q(8.4):GOTO:policies
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
+
+
+
+Q(qna): Yes. It's an open source tool called <a href="https://www.qnamarkup.org" target="_blank">QnA Markup</a>, but it's dead simple. You could learn it on your own. Would you like to see a 10 min video primer?
+A: Sure
+	Q(9.1):<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/RVhzQ1JVi3s?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>GOTO:menu_minus
+A: No thanks
+	Q(9.2):GOTO:menu_minus
+A: Why would I use something like this?
+	Q(9.3):I don't know, lots of reasons. You could help direct folks to resources based on their answers or collect info to automate documents...<br><br><img src="https://media.giphy.com/media/3o6ozovtBb4wLpIVZ6/giphy.gif" style="width:232px;height:130px;"/> GOTO:menu_minus
+
 
 
 Q(comfort): What's your comfort level with tech?
 A: I can use Word/Wordperfect.
-	Q(4.1): <img src="https://media.giphy.com/media/1S3vm6ISM2gDu/giphy.gif" style="width:132px;height:116px;"/> GOTO:everyone
+	Q(10.1): <img src="https://media.giphy.com/media/1S3vm6ISM2gDu/giphy.gif" style="width:132px;height:116px;"/> GOTO:everyone
 A: Give me a command line.
-	Q(4.2): <img src="https://media.giphy.com/media/gPkWsM6X5xLVe/giphy.gif" style="width:232px;height:174px;"/>
+	Q(10.2): <img src="https://media.giphy.com/media/gPkWsM6X5xLVe/giphy.gif" style="width:232px;height:174px;"/>
 	A: I'd love to play a game.
-		Q(4.2.1):<img src="https://jasoneppink.com/wp-content/gallery/the-reaction-gif-moving-image-as-gesture/kermit.gif" style="width:232px;height:167px;"> GOTO:wargames
-	A: Let's learn more about LITCon.
-		Q(4.2.2):GOTO:everyone
+		Q(10.2.1):<img src="https://jasoneppink.com/wp-content/gallery/the-reaction-gif-moving-image-as-gesture/kermit.gif" style="width:232px;height:167px;"> GOTO:wargames
+	A: Let's learn more about the course.
+		Q(10.2.2):GOTO:everyone
 A: What's a command line?
-	Q(4.3): <img src="https://media.giphy.com/media/NRa7dRkMlVZRE5HUU4/giphy.gif" style="width:232px;height:130px;"/> <br><br> It's that text interface you see computer folks using. Anyhow, it's not important. GOTO:everyone
+	Q(10.3): <img src="https://media.giphy.com/media/NRa7dRkMlVZRE5HUU4/giphy.gif" style="width:232px;height:130px;"/> <br><br> It's that text interface you see computer folks using. Anyhow, it's not important. GOTO:everyone
 
 
-Q(everyone):
-A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(wargames): How about a game of chess?
-A: Sounds good. I love chess.
-	Q(6.1): Your move (works best on a desktop). <br><br><iframe src="https://www.qnamarkup.org/templates/chess/" scrolling="no" seamless="seamless" style="overflow:hidden;width:260px;height:260px;border: solid 0px #eee;"></iframe> <br><br> Anywho, back to the conference... GOTO:everyone
+A: Sounds good. I love chess
+	Q(11.1): Your move (works best on a desktop). <br><br><iframe src="https://www.qnamarkup.org/templates/chess/" scrolling="no" seamless="seamless" style="overflow:hidden;width:260px;height:260px;border: solid 0px #eee;"></iframe> <br><br> Anywho, back to the course... GOTO:everyone
 A: How about thermonuclear war?
-	Q(6.2): <img src="https://i.imgur.com/WwpALFZ.gif" style="width:232px;height:131px;"><br><br>The only way to win is not to play! Have you actually seen <a href="https://en.wikipedia.org/wiki/WarGames" target=_blank>War Games</a>?
-	A: Yes.
-		Q(6.2.1): <img src="https://www.reactiongifs.com/r/2013/06/I-dont-believe-you.gif" style="width:232px;height:174px;"><br><br>Let's try again. GOTO:wargames
-	A: No.
-		Q(6.2.2): My apologies. Let me just say, thermonuclear war is the wrong answer. <br><br><img src ="https://i.giphy.com/uSHMDTUL7lKso.gif" style="width:232px;height:117px;"> GOTO:wargames
-A: Actually, let's get back to LITCon.
-	Q(6.3):GOTO:everyone
+	Q(11.2): <img src="https://i.imgur.com/WwpALFZ.gif" style="width:232px;height:131px;"><br><br>The only way to win is not to play! Have you actually seen <a href="https://en.wikipedia.org/wiki/WarGames" target=_blank>War Games</a>?
+	A: Yes
+		Q(11.2.1): <img src="https://www.reactiongifs.com/r/2013/06/I-dont-believe-you.gif" style="width:232px;height:174px;"><br><br>Let's try again. GOTO:wargames
+	A: No
+		Q(11.2.2): My apologies. Let me just say, thermonuclear war is the wrong answer. <br><br><img src ="https://i.giphy.com/uSHMDTUL7lKso.gif" style="width:232px;height:117px;"> GOTO:wargames
+A: Actually, let's get back to the course
+	Q(11.3):GOTO:everyone
 
 
 Q(bye): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>

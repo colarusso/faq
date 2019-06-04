@@ -6,10 +6,10 @@ Before:
 <style>
 body{
     background:white;
-    background-image: url("https://suffolklitlab.github.io/images/babbage.jpg");
+    background-image: url("https://colarusso.github.io/faq/images/babbage.jpg");
     background-color: #fff;
     background-repeat: repeat-x;
-    background-position: center -120px ;
+    background-position: center -40px ;
 }
 #conversation {
     max-width:900px;
@@ -39,7 +39,7 @@ body{
 </style>
 <div id="icon"></div>
 <h2 align=center style="margin:5px 0 5px;">LIT Lab Syllabus "Bot"</h2>
-<p>This is an interactive syllabus for Suffolk Law's project-based <a href="https://suffolklitlab.org/courses/lab/" target="_blank">LIT Lab</a> (2 experiential credits; Fall 2019, Tuesdays from 4-5:50pm in Sargent Hall, <a href="https://suffolklitlab.org/find/" target="_blank">Room 685E</a>). To get homework help, book office hours, and the like, visit <a href="https://colarusso.github.io/faq/" target="_blank">the FAQ "Bot."</a></p>
+<p>This is an interactive syllabus for Suffolk Law's project-based <a href="https://suffolklitlab.org/courses/lab/" target="_blank">LIT Lab</a> (2 experiential credits; Fall 2019, Tuesdays from 4-5:50pm in Sargent Hall, <a href="https://suffolklitlab.org/find/" target="_blank">Room 685E</a>). To get homework help, book office hours, and the like, visit <a href="https://colarusso.github.io/faq/" target="_blank">the FAQ "Bot."</a> Also, here's <a href="https://docs.google.com/document/d/12JmJCEv7RKqb21bQ-ZKJNM-D43SOT-QoY4ZACbpxBLA/edit?usp=sharing" target="_blank">the static copy</a>.</p>
 
 Q(1): What would you like to know?
 A: Who should take this class
