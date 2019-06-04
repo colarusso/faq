@@ -62,7 +62,7 @@ A: What the work looks like
 	A: Coder
 		Q(1.3.2): You will be free, within certain constraints and after pre-approval, to deviate from our standard recipes and produce projects that utilize your existing skill set. But as we have made clear above, this course should primarily help pair your technical skill with the critical eye of a legal practitioner. GOTO:studentwork
 A: If there's a textbook
-	Q(wmd): Students need to have a copy of Cathy O'Neil’s <a href="https://books.google.com/books/about/Weapons_of_Math_Destruction.html?id=5XqRDAEACAAJ" target="_blank">Weapons of Math Destruction</a>. 
+	Q(wmd): Students need to have a copy of Cathy O'Neil’s <a href="https://books.google.com/books/about/Weapons_of_Math_Destruction.html?id=5XqRDAEACAAJ" target="_blank">Weapons of Math Destruction</a>. Additional readings, media, and software, along with specific assignments are listed on the <a href="https://docs.google.com/document/d/1_pjMS1TgK4g6n4X5BuNdzVPySMVnyzD3TUUC2xFuyf0/edit?usp=sharing" target="_blank">Class, Reading, and Work Schedule</a>. 
 	<br><br>Would you like to browse course policies?
 	A: Yes
 		Q(1.4.1):GOTO:policies
