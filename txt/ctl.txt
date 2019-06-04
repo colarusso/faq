@@ -46,11 +46,10 @@ A: Who should take this class
 	Q(1.1):GOTO:problems
 A: What students learn
 	Q(learn): This course aims to place the use of new technologies (specifically the most hyped e.g., “AI” and data science) in the broader context of law and society.
-	<br><br>Upon successful completion of this course, students will:<br> <br>
-	Possess an introductory understanding of design thinking and its application to the practice of law, esp. in the development of legal tech.<br> <br>
-	Gain a high-level familiarity with the realm of the possible in legal tech, including a general understanding of data science and machine learning/narrow AI.<br> <br>
-	Understand the dangers and roots of algorithmic bias.<br><br>
-	And more to the point, they'll learn by doing. It is after all a project-based course. 
+	<br><br>Upon successful completion of this course, students will: 
+	(1) Possess an introductory understanding of design thinking and its application to the practice of law, esp. in the development of legal tech;
+	(2) Gain a high-level familiarity with the realm of the possible in legal tech, including a general understanding of data science and machine learning/narrow AI; and 
+	(3) Understand the dangers and roots of algorithmic bias. <br><br>And more to the point, they'll learn by doing. It is after all a project-based course. 
 	A: What does the work look like?
 		Q(1.2.1):GOTO:work
 	A: What are the course policies?
