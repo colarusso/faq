@@ -43,7 +43,7 @@ body{
 
 Q(1): What would you like to know?
 A: What a lab is
-	Q(1.1): It's a practical class offering experiential credit for actually doing something, in this case consulting with real world clients (e.g., legal aid organizations, courts, firms, and non-profits) on legal tech or data science projects. LIT stands for Legal Innovation and Technology. Basically, it's like a mini clinic. <br><br><img src="https://media.giphy.com/media/3pZhyDpeZRy46gsO9i/giphy.gif" style="width:232px;height:173px;"/>
+	Q(1.1): It's a practical class offering experiential credit for actually work, in this case, consulting with real world clients (e.g., legal aid organizations, courts, firms, and non-profits) on legal tech or data science projects. LIT stands for Legal Innovation and Technology. Basically, it's like a mini clinic. <br><br><img src="https://media.giphy.com/media/3pZhyDpeZRy46gsO9i/giphy.gif" style="width:232px;height:173px;"/>
 	A: Who should take this lab?
 		Q(1.1.1):GOTO:who
 	A: What does the work look like?
