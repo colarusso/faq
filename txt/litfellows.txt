@@ -42,63 +42,126 @@ body{
 <p>This is an interactive syllabus for Suffolk Law's Clinical programs' <a href="https://suffolklitlab.org/courses/fellows/" target="_blank">LIT Fellows</a>. To get project help, book an office meeting, and the like, visit <a href="https://colarusso.github.io/faq/" target="_blank">the FAQ "Bot."</a> Also, here's <a href="https://docs.google.com/document/d/1ec3S7f78ZtoL65bFkSOg0iXJ1_ScNy1m5XX7CywAeNc/edit" target="_blank">the static copy</a>.</p>
 
 Q(1): What would you like to know?
-A: Who should take this class
-	Q(1.1):GOTO:comfort
-A: What the work is like
-A: Course policies
-A: Do students build "bots" like this?
-	Q(1.4):GOTO:qna
+A: What a fellow is
+	Q(1.1): It's a student enrolled in one of our clinics programs who works a reduced case load, spending about 2 credits of their clinical time consulting with their clinic on legal tech or data science projects. LIT stands for Legal Innovation and Technology. Basically, it's like you're one of the firm's innovation officers. <br><br><img src="https://media.giphy.com/media/26u4ov16NIIZqe9dC/giphy.gif" style="width:232px;height:155px;"/>
+	A: Who should be a fellow?
+		Q(1.1.1):GOTO:who
+	A: What does the work look like?
+		Q(1.1.2):GOTO:work
+	A: How are students evaluated?
+		Q(1.1.3):GOTO:eval
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
+A: Who makes a good fellow
+	Q(who):GOTO:problems
+
+A: What fellow work looks like
+	Q(work): We meet weekly as a group in <a href="https://suffolklitlab.org/find/" target="_blank">the LIT Lab</a> for up to 2 hours. In that time, we review the status of tasks started the prior week and choose tasks to work on for the upcoming week. We ask: what went well; what needs improvement; and what next? In this way we take a project, break it into bite-sized tasks, and work our way through it with continuous evaluation.<br><br> The specifics of work vary based on the needs of our projects. We might be mapping a client's workflow, building a website, or wrangling data. <br><br> We're not dogmatic about it, but we lean towards a <a href="https://www.atlassian.com/agile/kanban" target="_blank">Kanban</a> implementation of <a href="https://agilemanifesto.org/" target="_blank">Agile principles</a>. Sometimes it looks like <a href="https://www.atlassian.com/agile/scrum" target="_blank">Scrum</a>. A large part of what you learn is how to work as part of interdisciplinary teams, and these are the methods known to a lot of software folks. 
+	A: Tell me about Kanban
+		Q(1.3.1):<div class="profile_vid"><iframe src="https://www.youtube.com/embed/iVaFVa7HYj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		A: Tell me about Scrum
+			Q(1.3.1.1):GOTO:scrum
+		A: How are students evaluated?
+			Q(1.3.1.2):GOTO:eval
+	A: Tell me about Scrum
+		Q(scrum):<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/RaaBrPCo_Mw" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div> 
+		A: How are students evaluated?
+			Q(1.3.2.1):GOTO:eval
+		A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
+	A: How are students evaluated?
+		Q(1.3.3):GOTO:eval
+A: How students are evaluated
+	Q(eval): The authoritative and complete version of course policies (including grading) can be found <a href="https://docs.google.com/document/d/1ec3S7f78ZtoL65bFkSOg0iXJ1_ScNy1m5XX7CywAeNc/edit" target="_blank">here</a>. That being said, it's done like the rest of the clinic. In fact, student's grades will show up as part of their clinical grades. Students are graded on their performance during group and individual meetings, their demonstrated commitment to the work and their clients, their professional growth during the course (including as measured in self-evaluation exercises), as well as the quality of their project work on behalf of their clients.
+	A: Thanks, bye
+		Q(1.4.1):GOTO:bye
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
-Q(qna): Yes. It's an open source tool called <a href="https://www.qnamarkup.org" target="_blank">QnA Markup</a>, and it's actually one of three open source tools we'll be teaching at our free <a href="https://suffolklitlab.org/LITCon/2019/hack/" target="_blank">skills building session</a> the weekend before the conference. Would you like to see a 10 min video primer?
-A: Sure.
-	Q(2.1):<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/RVhzQ1JVi3s?rel=0" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div>
-	<br><br>Do you want more?
-	A: Yes.
-		Q(2.1.1):GOTO:whatabout
-	A: No.
-		Q(2.1.2):GOTO:whatabout
-A: No thanks.
-	Q(2.2):GOTO:whatabout
-A: Why would I use something like this?
-	Q(2.3): I don't know, lots of reason. You could help direct folks to resources based on their answers or collect info to automate documents... <br><br> <img src="https://media.giphy.com/media/3o6ozovtBb4wLpIVZ6/giphy.gif" style="width:232px;height:130px;"/> GOTO:whatabout
+Q(problems): Do you think there are things about the way lawyers (or the justice system) work that could use improvement?
+A: Yes
+	Q(goodnews): Then you'd fit right in. It's the Legal <b>Innovation</b> and Technology Fellows program after all, and our goal is to help clients improve things by trying something new. <br><br>That being said, what's your comfort level with tech?
+	A: I can use Word/Wordperfect
+		Q(2.1.1): <img src="https://media.giphy.com/media/1S3vm6ISM2gDu/giphy.gif" style="width:132px;height:116px;"/> <br><br>
+		Are you willing to learn new things?
+		A: Yes 
+			Q(2.1.1.1):GOTO:everyone
+		A: No
+			Q(2.1.1.2):GOTO:notforyou
+	A: Give me a command line
+		Q(2.1.2): <img src="https://media.giphy.com/media/gPkWsM6X5xLVe/giphy.gif" style="width:232px;height:174px;"/>
+		A: I'd love to play a game
+			Q(2.1.2.1):<img src="https://jasoneppink.com/wp-content/gallery/the-reaction-gif-moving-image-as-gesture/kermit.gif" style="width:232px;height:167px;"> GOTO:wargames
+		A: Let's not get distracted 
+			Q(2.1.2.2):GOTO:everyone
+	A: What's a command line?
+		Q(2.1.3): <img src="https://media.giphy.com/media/NRa7dRkMlVZRE5HUU4/giphy.gif" style="width:232px;height:130px;"/> <br><br> It's that text interface you see computer folks using. Anyhow, it's not important. Are you willing to learn new things?
+		A: Yes 
+			Q(2.1.3.1):GOTO:everyone
+		A: No
+			Q(2.1.3.2):GOTO:notforyou
 
 
-Q(whatabout): Well, if you're interested in attending some free sessions on learning how to use QnA along with <a href="https://docassemble.org/" target="_blank">Docassemble</a> and <a href="https://www.a2jauthor.org/" target="_blank">A2J Author</a>, we'll be offering some on April 6th @ noon. <br><br>
-Back to LITCon proper. Can you make it to Boston on April 8th, 2019?
+A: No
+	Q(2.2): <img src="https://www.reactiongifs.com/r/2013/06/I-dont-believe-you.gif" style="width:232px;height:174px;">GOTO:mproblems
+
+
+Q(mproblems): Do you think there are things about the way lawyers (or the justice system) work that could use improvement?
 A: Yes.
+	Q(3.1):GOTO:goodnews
 A: No.
+	Q(3.2): <img src="https://media.giphy.com/media/qaYxWacSp8Jfq/giphy.gif" style="width:232px;height:217px;">GOTO:mmproblems
 
+
+
+Q(mmproblems): <i>Do you think there are things about the way lawyers (or the justice system) work that could use improvement?</i>
+A: Yes
+	Q(4.1):GOTO:goodnews
+A: No
+	Q(4.2): <img src="https://media.giphy.com/media/12FfNKPlSR5k2c/giphy.gif" style="width:232px;height:193px;">GOTO:mmmproblems
+
+
+Q(mmmproblems): <i><b>Do you think there things about the way lawyers (or the justice system) work that could use improvement?</b></i>
+A: Yes
+	Q(5.1):GOTO:goodnews
+A: No
+	Q(notforyou):<img src="https://media.giphy.com/media/o6KYXl09rnmOQ/giphy.gif" style="width:232px;height:131px;"/><br><br> Okay... this might not be for you.
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat pictures now?
+	A: Bye
+		Q(5.2.2):GOTO:bye
 
 Q(comfort): What's your comfort level with tech?
-A: I can use Word/Wordperfect.
-	Q(4.1): <img src="https://media.giphy.com/media/1S3vm6ISM2gDu/giphy.gif" style="width:132px;height:116px;"/> GOTO:everyone
-A: Give me a command line.
-	Q(4.2): <img src="https://media.giphy.com/media/gPkWsM6X5xLVe/giphy.gif" style="width:232px;height:174px;"/>
+A: I can use Word/Wordperfect
+	Q(6.1): <img src="https://media.giphy.com/media/1S3vm6ISM2gDu/giphy.gif" style="width:132px;height:116px;"/> GOTO:everyone
+A: Give me a command line
+	Q(6.2): <img src="https://media.giphy.com/media/gPkWsM6X5xLVe/giphy.gif" style="width:232px;height:174px;"/>
 	A: I'd love to play a game.
-		Q(4.2.1):<img src="https://jasoneppink.com/wp-content/gallery/the-reaction-gif-moving-image-as-gesture/kermit.gif" style="width:232px;height:167px;"> GOTO:wargames
-	A: Let's learn more about LITCon.
-		Q(4.2.2):GOTO:everyone
+		Q(6.2.1):<img src="https://jasoneppink.com/wp-content/gallery/the-reaction-gif-moving-image-as-gesture/kermit.gif" style="width:232px;height:167px;"> GOTO:wargames
+	A: Back to the lab
+		Q(6.2.2):GOTO:everyone
 A: What's a command line?
-	Q(4.3): <img src="https://media.giphy.com/media/NRa7dRkMlVZRE5HUU4/giphy.gif" style="width:232px;height:130px;"/> <br><br> It's that text interface you see computer folks using. Anyhow, it's not important. GOTO:everyone
+	Q(6.3): <img src="https://media.giphy.com/media/NRa7dRkMlVZRE5HUU4/giphy.gif" style="width:232px;height:130px;"/> <br><br> It's that text interface you see computer folks using. Anyhow, it's not important. GOTO:everyone
 
 
-Q(everyone):
+
+Q(everyone): Great. To be a fellow, you must have taken (or be enrolled to take concurrently) the 2-credit fall course <a href="https://www.suffolk.edu/law/academics-clinics/juris-doctor/search-elective-courses?CourseID=676" target="_blank">Coding the Law</a>.
+A: What does the work look like?
+	Q(7.1):GOTO:work
+A: How are students evaluated?
+	Q(7.2):GOTO:eval
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
+
 Q(wargames): How about a game of chess?
-A: Sounds good. I love chess.
-	Q(6.1): Your move (works best on a desktop). <br><br><iframe src="https://www.qnamarkup.org/templates/chess/" scrolling="no" seamless="seamless" style="overflow:hidden;width:260px;height:260px;border: solid 0px #eee;"></iframe> <br><br> Anywho, back to the conference... GOTO:everyone
+A: Sounds good. I love chess
+	Q(8.1): Your move (works best on a desktop). <br><br><iframe src="https://www.qnamarkup.org/templates/chess/" scrolling="no" seamless="seamless" style="overflow:hidden;width:260px;height:260px;border: solid 0px #eee;"></iframe> <br><br> Anywho, back to the lab... GOTO:everyone
 A: How about thermonuclear war?
-	Q(6.2): <img src="https://i.imgur.com/WwpALFZ.gif" style="width:232px;height:131px;"><br><br>The only way to win is not to play! Have you actually seen <a href="https://en.wikipedia.org/wiki/WarGames" target=_blank>War Games</a>?
-	A: Yes.
-		Q(6.2.1): <img src="https://www.reactiongifs.com/r/2013/06/I-dont-believe-you.gif" style="width:232px;height:174px;"><br><br>Let's try again. GOTO:wargames
-	A: No.
-		Q(6.2.2): My apologies. Let me just say, thermonuclear war is the wrong answer. <br><br><img src ="https://i.giphy.com/uSHMDTUL7lKso.gif" style="width:232px;height:117px;"> GOTO:wargames
-A: Actually, let's get back to LITCon.
-	Q(6.3):GOTO:everyone
+	Q(8.2): <img src="https://i.imgur.com/WwpALFZ.gif" style="width:232px;height:131px;"><br><br>The only way to win is not to play! Have you actually seen <a href="https://en.wikipedia.org/wiki/WarGames" target=_blank>War Games</a>?
+	A: Yes
+		Q(8.2.1): <img src="https://www.reactiongifs.com/r/2013/06/I-dont-believe-you.gif" style="width:232px;height:174px;"><br><br>Let's try again. GOTO:wargames
+	A: No
+		Q(8.2.2): My apologies. Let me just say, thermonuclear war is the wrong answer. <br><br><img src ="https://i.giphy.com/uSHMDTUL7lKso.gif" style="width:232px;height:117px;"> GOTO:wargames
+A: Let's get back to the lab
+	Q(8.3):GOTO:everyone
 
 
-Q(bye): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>
-
+Q(bye): <img src="https://colarusso.github.io/faq/images/bye.gif" style="width:232px;height:232px;"/>

@@ -59,26 +59,42 @@ A: Who should take this lab
 		Q(1.2.2):<img src="https://media.giphy.com/media/jPAdK8Nfzzwt2/giphy.gif" style="width:232px;height:131px;"/> GOTO:problems
 
 A: What lab work looks like
-	Q(work):
+	Q(work): We meet weekly in <a href="https://suffolklitlab.org/find/" target="_blank">the LIT Lab</a> for up to 2 hours. In that time, we review the status of tasks started the prior week and choose tasks to work on for the upcoming week. We ask: what went well; what needs improvement; and what next? In this way we take a project, break it into bite-sized tasks, and work our way through it with continuous evaluation.<br><br> The specifics of work vary based on the needs of our clients (e.g., legal aid organizations, courts, firms, and non-profits). We might be mapping a client's workflow, building a website, or wrangling data. <br><br> We're not dogmatic about it, but we lean towards a <a href="https://www.atlassian.com/agile/kanban" target="_blank">Kanban</a> implementation of <a href="https://agilemanifesto.org/" target="_blank">Agile principles</a>. Sometimes it looks like <a href="https://www.atlassian.com/agile/scrum" target="_blank">Scrum</a>. A large part of what you learn is how to work as part of interdisciplinary teams, and these are the methods known to a lot of software folks. 
+	A: Tell me about Kanban
+		Q(1.3.1):<div class="profile_vid"><iframe src="https://www.youtube.com/embed/iVaFVa7HYj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		A: Tell me about Scrum
+			Q(1.3.1.1):GOTO:scrum
+		A: How are students evaluated?
+			Q(1.3.1.2):GOTO:eval
+	A: Tell me about Scrum
+		Q(scrum):<div class="profile_vid"><iframe class="embed_vid" src="https://www.youtube.com/embed/RaaBrPCo_Mw" gesture="media" allow="encrypted-media" allowfullscreen="" frameborder="0"></iframe></div> 
+		A: How are students evaluated?
+			Q(1.3.2.1):GOTO:eval
+		A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
+	A: How are students evaluated?
+		Q(1.3.3):GOTO:eval
 A: How students are evaluated
-	Q(eval): The authoritative and complete version of course policies can be found <a href="https://docs.google.com/document/d/1_KTzKR4t_ReKF_UovfMCYpfKMBELBRrZztqQBPgnYSQ/edit?usp=sharing" target="_blank">here</a>. That being said, here are some highlights.
+	Q(eval): The authoritative and complete version of course policies (including grading) can be found <a href="https://docs.google.com/document/d/12JmJCEv7RKqb21bQ-ZKJNM-D43SOT-QoY4ZACbpxBLA/edit?usp=sharing" target="_blank">here</a>. That being said, it's done like other experiential courses. So students will be graded on their performance during group and individual meetings, their demonstrated commitment to the work and their clients, their professional growth during the course (including as measured in self-evaluation exercises), as well as the quality of their project work on behalf of their clients.
+	A: Thanks, bye
+		Q(1.4.1):GOTO:bye
+	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(problems): Do you think there are things about the way lawyers (or the justice system) work that could use improvement?
 A: Yes
 	Q(goodnews): Then you'd fit right in. We're the Legal <b>Innovation</b> and Technology Lab, and we help clients improve things by trying something new. <br><br>That being said, what's your comfort level with tech?
-	A: I can use Word/Wordperfect.
+	A: I can use Word/Wordperfect
 		Q(2.1.1): <img src="https://media.giphy.com/media/1S3vm6ISM2gDu/giphy.gif" style="width:132px;height:116px;"/> <br><br>
 		Are you willing to learn new things?
 		A: Yes 
 			Q(2.1.1.1):GOTO:everyone
 		A: No
 			Q(2.1.1.2):GOTO:notforyou
-	A: Give me a command line.
+	A: Give me a command line
 		Q(2.1.2): <img src="https://media.giphy.com/media/gPkWsM6X5xLVe/giphy.gif" style="width:232px;height:174px;"/>
 		A: I'd love to play a game
 			Q(2.1.2.1):<img src="https://jasoneppink.com/wp-content/gallery/the-reaction-gif-moving-image-as-gesture/kermit.gif" style="width:232px;height:167px;"> GOTO:wargames
-		A: Back to the lab please
+		A: Let's not get distracted 
 			Q(2.1.2.2):GOTO:everyone
 	A: What's a command line?
 		Q(2.1.3): <img src="https://media.giphy.com/media/NRa7dRkMlVZRE5HUU4/giphy.gif" style="width:232px;height:130px;"/> <br><br> It's that text interface you see computer folks using. Anyhow, it's not important. Are you willing to learn new things?
@@ -117,9 +133,9 @@ A: No
 		Q(5.2.2):GOTO:bye
 
 Q(comfort): What's your comfort level with tech?
-A: I can use Word/Wordperfect.
+A: I can use Word/Wordperfect
 	Q(6.1): <img src="https://media.giphy.com/media/1S3vm6ISM2gDu/giphy.gif" style="width:132px;height:116px;"/> GOTO:everyone
-A: Give me a command line.
+A: Give me a command line
 	Q(6.2): <img src="https://media.giphy.com/media/gPkWsM6X5xLVe/giphy.gif" style="width:232px;height:174px;"/>
 	A: I'd love to play a game.
 		Q(6.2.1):<img src="https://jasoneppink.com/wp-content/gallery/the-reaction-gif-moving-image-as-gesture/kermit.gif" style="width:232px;height:167px;"> GOTO:wargames
@@ -130,7 +146,7 @@ A: What's a command line?
 
 
 
-Q(everyone): If you've taken or will be taking concurrently: (1) Coding the Law; (2) Lawyering: Age of Smart Machines; (3) 21st Century Lawyering; or (4) Decision Making and Choice Management, you can enroll now. If you haven't, you'll need to write D Colarusso at suffolk dot EDU and ask for a waiver of the pre- co-requisite. Don't worry, these are granted very liberally. 
+Q(everyone): If you've taken or will be taking concurrently: (1) <a href="https://www.suffolk.edu/law/academics-clinics/juris-doctor/search-elective-courses?CourseID=676" target="_blank">Coding the Law</a>; (2) <a href="https://www.suffolk.edu/law/academics-clinics/juris-doctor/search-elective-courses?CourseID=571" target="_blank">Lawyering in an Age of Smart Machines</a>; (3) <a href="https://www.suffolk.edu/law/academics-clinics/juris-doctor/search-elective-courses?CourseID=623" target="_blank">21st Century Lawyering</a>; or (4) <a href="https://www.suffolk.edu/law/academics-clinics/juris-doctor/search-elective-courses?CourseID=640" target="_blank">Decision Making and Choice Management</a>, you can enroll now. If you haven't, you'll need to write D Colarusso at suffolk dot EDU and ask for a waiver of the pre- co-requisite. Don't worry, these are granted very liberally. 
 A: What does the work look like?
 	Q(7.1):GOTO:work
 A: How are students evaluated?
@@ -152,5 +168,5 @@ A: Let's get back to the lab
 	Q(8.3):GOTO:everyone
 
 
-Q(bye): <img src="https://media.giphy.com/media/3oxHQi7H2L27ilG1Da/giphy.gif" style="width:232px;height:232px;"/>
+Q(bye): <img src="https://colarusso.github.io/faq/images/bye.gif" style="width:232px;height:232px;"/>
 
