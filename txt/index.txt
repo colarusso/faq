@@ -39,7 +39,7 @@ body{
 </style>
 <div id="icon"></div>
 <h2 align=center style="margin:5px 0 5px;">Colarusso's FAQ "Bot"</h2>
-<p>This interactive decision tree is more responsive than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Use it to: book a meeting/call, figure out if you should take one of my classes, get homework help, earn money, ask about speaking engagements, and much more. ;)</p>
+<p>This interactive decision tree is more responsive than its <a href="https://twitter.com/Colarusso" target="_blank">author</a>. Use it to: book a meeting/call, figure out if you should take one of my classes, earn money, ask about speaking engagements, and much more. ;)</p>
 
 
 Q(1): Are you currently taking one of my classes? 
@@ -192,9 +192,9 @@ A: Not a student, but I want to talk
 		Q(12.1.1):GOTO:fac_meet
 	A: No
 		Q(12.1.2):GOTO:ex_meet
-A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: Bye
-	Q(12.3):GOTO:bye
+	Q(12.2):GOTO:bye
+A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
 Q(background): We'll it's pretty eclectic. You should probably just check out my eponymous website—<a href="http://davidcolarusso.com/" target="_blank">David Colarusso</a>.
@@ -209,9 +209,9 @@ A: Of course; that makes sense
 	A: Thanks, bye
 		Q(14.1.1):GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
+A: Thanks, bye
+	Q(14.2):GOTO:bye
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
-A: Bye
-	Q(14.3):GOTO:bye
 
 
 Q(fac_meet):Just <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time that works for you.
@@ -247,7 +247,7 @@ A: No
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
-Q(RAs): Yes. Occasionally, the Lab hires one or two paid student RAs as part of the Federal Work-study Program. Are you a Suffolk Law student?
+Q(RAs): Yes. Occasionally, the Lab hires one or two students for paid positions. Are you a Suffolk Law student?
 A: Yes
 	Q(paid): Are you interested in the law, legal tech, or software engineering? 
 	A: Yes
@@ -255,7 +255,7 @@ A: Yes
 	A: No
 		Q(18.1.2):<img src="https://colarusso.github.io/faq/images/um.gif" style="width:232px;height:131px;"/><br><br> Okay... it's probably not a good fit. Let's try something else. GOTO:no_RA_student
 A: Yes, but I need credits, not cash
-	Q(18.2): If you're interested in credits, I suggest checking out my classes. E.g., the work of Lab students is often similar to that of Lab RAs. 
+	Q(18.2): If you're interested in credits, I suggest checking out my classes. The work of Lab students is often similar to that of paid the cohort. 
 	A: More about classes
 		Q(18.2.1):GOTO:classes
 	A: More about paid positions
