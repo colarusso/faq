@@ -143,13 +143,13 @@ Q(6):<!--
 -->
 
 
-Q(fac_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>Occasionally we'll work on projects for faculty/staff. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time to talk.
+Q(fac_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>Occasionally we'll work on projects for faculty/staff. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more about the Lab. If you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/suls-meeting" target="_blank">click through here</a> and book a time to talk.
 A: Thanks, bye
 	Q(7.1):GOTO:bye
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
-Q(ex_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>We serve both non-profit and for-profit clients, with the latter subsidizing the former, when appropriate. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more, and if you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/call" target="_blank">click through here</a> and book a time to talk.
+Q(ex_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>If you're looking to work with Spot, our AI-powered issue spotter, you can find just about everything I'd cover in a call <a href="spot.suffolklitlab.org" target="_blank">here</a>. Likewise, you can learn about the Document Assembly Line project <a href="https://suffolklitlab.org/docassemble-AssemblyLine-documentation/docs/" target="_blank">here</a>.<br><br>We primarily serve non-profit clients, but occasionally we work with for-profits. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more. If you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/call" target="_blank">click through here</a> and book a time to talk. 
 A: Thanks, bye
 	Q(8.1):GOTO:bye
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
@@ -255,7 +255,7 @@ A: Yes
 	A: No
 		Q(18.1.2):<img src="https://colarusso.github.io/faq/images/um.gif" style="width:232px;height:131px;"/><br><br> Okay... it's probably not a good fit. Let's try something else. GOTO:no_RA_student
 A: Yes, but I need credits, not cash
-	Q(18.2): If you're interested in credits, I suggest checking out my classes. The work of Lab students is often similar to that of paid the cohort. 
+	Q(18.2): If you're interested in credits, I suggest checking out my classes. The work of Lab students is often similar to that of the paid cohort. 
 	A: More about classes
 		Q(18.2.1):GOTO:classes
 	A: More about paid positions
