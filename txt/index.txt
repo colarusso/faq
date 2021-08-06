@@ -121,17 +121,17 @@ A: Coding the Law
 	Q(5.1): Would you like to view the course website, syllabus, or have me walk you through the highlights?
 	A:[https://www.codingthelaw.org] Website
 		Q(5.1.1): The site should have opened in a new window. Thanks, and bye for now. GOTO:bye
-	A:[https://docs.google.com/document/d/1_KTzKR4t_ReKF_UovfMCYpfKMBELBRrZztqQBPgnYSQ/edit?usp=sharing] Syllabus
+	A:[https://docs.google.com/document/d/1cyeNbNi3XkbNKO82hwtps_LkF_SlNfr85XiRpSnX7QM/] Syllabus
 		Q(5.1.2): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/ctl.html',this.innerHTML)] Highlights
 A: Legal Innovation & Tech. Lab (LIT)
 	Q(5.2): Would you like to view the lab syllabus, or have me walk you through the highlights?
-	A:[https://docs.google.com/document/d/12JmJCEv7RKqb21bQ-ZKJNM-D43SOT-QoY4ZACbpxBLA/edit?usp=sharing] Syllabus
+	A:[https://docs.google.com/document/d/1dcSs76bo0eKtcNyj0StS-rkY_RKIlrYRTkQY0T8Ne3I/] Syllabus
 		Q(5.2.1): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/litlab.html',this.innerHTML)] Highlights
 A: LIT Fellows program
 	Q(5.3): Would you like to view the LIT Fellows' Handbook, or have me walk you through the highlights?
-	A:[https://docs.google.com/document/d/1ec3S7f78ZtoL65bFkSOg0iXJ1_ScNy1m5XX7CywAeNc/edit?usp=sharing] Handbook
+	A:[https://docs.google.com/document/d/1bbPALWmV0_REzczoLS_drVOnn3CuVp6FnZnoWAriWDk] Handbook
 		Q(5.3.1): The handbook should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/litfellows.html',this.innerHTML)] Highlights
 
@@ -149,7 +149,7 @@ A: Thanks, bye
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
-Q(ex_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>If you're looking to work with Spot, our AI-powered issue spotter, you can find just about everything I'd cover in a call <a href="spot.suffolklitlab.org" target="_blank">here</a>. Likewise, you can learn about the Document Assembly Line project <a href="https://suffolklitlab.org/docassemble-AssemblyLine-documentation/docs/" target="_blank">here</a>.<br><br>We primarily serve non-profit clients, but occasionally we work with for-profits. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more. If you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/call" target="_blank">click through here</a> and book a time to talk. 
+Q(ex_hire): The Legal Innovation and Technology (LIT) Lab is an experiential program combining the vision of Suffolk's Legal Innovation and Technology Institute with the pedagogy and legal services mission of our Clinical Programs. The Lab allows students to work as part of a consultancy focused on legal tech and data science projects. <br><br>If you're looking to work with Spot, our AI-powered issue spotter, you can find just about everything I'd cover in a call <a href="spot.suffolklitlab.org" target="_blank">here</a>. Likewise, you can learn about the Document Assembly Line project <a href="https://suffolklitlab.org/docassemble-AssemblyLine-documentation/docs/" target="_blank">here</a>.<br><br>We primarily serve non-profit clients, but occasionally we work with for-profits. See <a href="https://suffolklitlab.org/" target="_blank">our website</a> for more about the Lab. If you want to talk about a potential project, <a href="https://calendly.com/dcolarusso/call" target="_blank">click through here</a> and book a time to talk. 
 A: Thanks, bye
 	Q(8.1):GOTO:bye
 A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
