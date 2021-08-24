@@ -126,12 +126,12 @@ A: Coding the Law
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: Legal Innovation & Tech. Lab (LIT)
 	Q(5.2): Would you like to view the lab syllabus?
-	A:[https://docs.google.com/document/d/1dcSs76bo0eKtcNyj0StS-rkY_RKIlrYRTkQY0T8Ne3I/] Syllabus
+	A:[https://docs.google.com/document/d/1woAayZAWWqIMlkkQrVihDXw8FflqQu3KHh7IFlJEYUo/] Syllabus
 		Q(5.2.1): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: LIT Fellows program
 	Q(5.3): Would you like to view the LIT Fellows' Handbook?
-	A:[https://docs.google.com/document/d/1bbPALWmV0_REzczoLS_drVOnn3CuVp6FnZnoWAriWDk] Handbook
+	A:[https://docs.google.com/document/d/1bbPALWmV0_REzczoLS_drVOnn3CuVp6FnZnoWAriWDk/] Handbook
 		Q(5.3.1): The handbook should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
