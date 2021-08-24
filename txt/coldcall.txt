@@ -64,24 +64,23 @@ Q(2):<!--
 ################################
 -->
 
-
 Q(classes): Which class?
 A: Coding the Law
-	Q(3.1): Would you like to view the course website or syllabus?
+	Q(5.1): Would you like to view the course website or syllabus?
 	A:[https://www.codingthelaw.org] Website
-		Q(3.1.1): The site should have opened in a new window. Thanks, and bye for now. GOTO:bye
+		Q(5.1.1): The site should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[https://docs.google.com/document/d/1cyeNbNi3XkbNKO82hwtps_LkF_SlNfr85XiRpSnX7QM/] Syllabus
-		Q(3.1.2): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
+		Q(5.1.2): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: Legal Innovation & Tech. Lab (LIT)
-	Q(3.2): Would you like to view the lab syllabus?
-	A:[https://docs.google.com/document/d/1dcSs76bo0eKtcNyj0StS-rkY_RKIlrYRTkQY0T8Ne3I/] Syllabus
-		Q(3.2.1): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
+	Q(5.2): Would you like to view the lab syllabus?
+	A:[https://docs.google.com/document/d/1woAayZAWWqIMlkkQrVihDXw8FflqQu3KHh7IFlJEYUo/] Syllabus
+		Q(5.2.1): The syllabus should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 A: LIT Fellows program
-	Q(3.3): Would you like to view the LIT Fellows' Handbook?
-	A:[https://docs.google.com/document/d/1bbPALWmV0_REzczoLS_drVOnn3CuVp6FnZnoWAriWDk] Handbook
-		Q(3.3.1): The handbook should have opened in a new window. Thanks, and bye for now. GOTO:bye
+	Q(5.3): Would you like to view the LIT Fellows' Handbook?
+	A:[https://docs.google.com/document/d/1bbPALWmV0_REzczoLS_drVOnn3CuVp6FnZnoWAriWDk/] Handbook
+		Q(5.3.1): The handbook should have opened in a new window. Thanks, and bye for now. GOTO:bye
 	A:[javascript:loadQnA('https://colarusso.github.io/faq/cats.html',this.innerHTML)] Can I have cat videos?
 
 
