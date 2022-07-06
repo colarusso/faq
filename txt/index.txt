@@ -109,7 +109,7 @@ Q(3):<!--
 -->
 
 
-Q(currentjobs): There are no openings at this time, but we will likely have something in the summer of 2022. Can I help you with something else? 
+Q(currentjobs): There are no openings at this time, but we may have something in the summer of 2022. Can I help you with something else? 
 A: Yes 
 	Q(4.1):GOTO:no_RA_student
 A: No thank you, good bye
